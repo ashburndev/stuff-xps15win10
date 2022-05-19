@@ -1,0 +1,280 @@
+4:35 AM 4/12/2022
+
+grails create-app wire
+cd wire
+grails create-domain-class Document
+grails create-domain-class Comment
+code .
+type grails-app\domain\wire\Document.groovy
+type grails-app\domain\wire\Comment.groovy
+grails generate-all wire.Document
+grails generate-all wire.Comment
+grails run-app
+
+http://localhost:8080/wire
+http://localhost:8080/wire/dbconsole
+
+notepad .gitinit
+git init
+git commit -a -m "first commit"
+git status
+
+git add .
+git commit -a -m "second commit"
+git status
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+
+C:\Users\David Holberton\myprojs\wire>git commit -a -m "first commit"
+On branch main
+
+Initial commit
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        .asscache
+        .gitignore
+        application.properties
+        grails-app/
+        grailsw
+        grailsw.bat
+        test/
+        web-app/
+        wrapper/
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+C:\Users\David Holberton\myprojs\wire>
+
+C:\Users\David Holberton\myprojs\wire>git status
+On branch main
+nothing to commit, working tree clean
+
+C:\Users\David Holberton\myprojs\wire>git --version
+git version 2.35.1.windows.2
+
+C:\Users\David Holberton\myprojs\wire>
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+
+C:\Users\David Holberton\myprojs\wire>
+C:\Users\David Holberton\myprojs\wire>type grails-app\domain\wire\Document.groovy
+package wire
+class Document {
+    String title
+    String summary
+    static hasMany = [comments:Comment]
+    static constraints = {
+    }
+}
+
+C:\Users\David Holberton\myprojs\wire>type grails-app\domain\wire\Comment.groovy
+package wire
+class Comment {
+    String body
+    static belongsTo = [document:Document]
+    static constraints = {
+    }
+}
+
+C:\Users\David Holberton\myprojs\wire>
+
+C:\Users\David Holberton\myprojs\wire\grails-app\conf>dir /o:gd
+ Volume in drive C has no label.
+ Volume Serial Number is 4603-A8D3
+
+ Directory of C:\Users\David Holberton\myprojs\wire\grails-app\conf
+
+04/11/2022  10:30 AM    <DIR>          hibernate
+04/11/2022  10:30 AM    <DIR>          ..
+04/11/2022  10:30 AM    <DIR>          .
+04/11/2022  10:30 AM    <DIR>          spring
+03/03/2016  10:05 AM             2,044 DataSource.groovy
+03/03/2016  10:05 AM             5,009 Config.groovy
+03/03/2016  10:05 AM             3,469 BuildConfig.groovy
+03/03/2016  10:05 AM                88 BootStrap.groovy
+03/03/2016  10:05 AM               245 UrlMappings.groovy
+               5 File(s)         10,855 bytes
+               4 Dir(s)  127,048,876,032 bytes free
+
+C:\Users\David Holberton\myprojs\wire\grails-app\conf>copy DataSource.groovy DataSource.groovy.orig
+        1 file(s) copied.
+
+C:\Users\David Holberton\myprojs\wire\grails-app\conf>copy BuildConfig.groovy BuildConfig.groovy.orig
+        1 file(s) copied.
+
+C:\Users\David Holberton\myprojs\wire\grails-app\conf>copy Config.groovy Config.groovy.orig
+        1 file(s) copied.
+
+C:\Users\David Holberton\myprojs\wire\grails-app\conf>
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+
+barbedwire emeraldtortoise
+firewire   limeterrapin
+hardwire   greenturtle
+
+show databases;
+create database development_barbedwire;
+create database test_barbedwire;
+create database production_barbedwire;
+create database barbedwire_development;
+create database barbedwire_test;
+create database barbedwire_production;
+show databases;
+
+CREATE USER 'barbedwire'@'localhost' IDENTIFIED BY 'emeraldtortoise';
+GRANT ALL ON development_barbedwire.* TO 'barbedwire'@'localhost' WITH GRANT OPTION;
+GRANT ALL ON test_barbedwire.*        TO 'barbedwire'@'localhost' WITH GRANT OPTION;
+GRANT ALL ON production_barbedwire.*  TO 'barbedwire'@'localhost' WITH GRANT OPTION;
+GRANT ALL ON barbedwire_development.* TO 'barbedwire'@'localhost' WITH GRANT OPTION;
+GRANT ALL ON barbedwire_test.*        TO 'barbedwire'@'localhost' WITH GRANT OPTION;
+GRANT ALL ON barbedwire_production.*  TO 'barbedwire'@'localhost' WITH GRANT OPTION;
+SHOW GRANTS FOR 'barbedwire'@'localhost';
+
+mysql> show databases;
++------------------------+
+| Database               |
++------------------------+
+| barbedwire_development |
+| barbedwire_production  |
+| barbedwire_test        |
+| development_barbedwire |
+| information_schema     |
+| inspire                |
+| menagerie              |
+| mysql                  |
+| performance_schema     |
+| production_barbedwire  |
+| sys                    |
+| test_barbedwire        |
++------------------------+
+12 rows in set (0.00 sec)
+
+mysql>
+mysql> SHOW GRANTS FOR 'barbedwire'@'localhost';
++--------------------------------------------------------------------------------------------------+
+| Grants for barbedwire@localhost                                                                  |
++--------------------------------------------------------------------------------------------------+
+| GRANT USAGE ON *.* TO `barbedwire`@`localhost`                                                   |
+| GRANT ALL PRIVILEGES ON `barbedwire_development`.* TO `barbedwire`@`localhost` WITH GRANT OPTION |
+| GRANT ALL PRIVILEGES ON `barbedwire_production`.* TO `barbedwire`@`localhost` WITH GRANT OPTION  |
+| GRANT ALL PRIVILEGES ON `barbedwire_test`.* TO `barbedwire`@`localhost` WITH GRANT OPTION        |
+| GRANT ALL PRIVILEGES ON `development_barbedwire`.* TO `barbedwire`@`localhost` WITH GRANT OPTION |
+| GRANT ALL PRIVILEGES ON `production_barbedwire`.* TO `barbedwire`@`localhost` WITH GRANT OPTION  |
+| GRANT ALL PRIVILEGES ON `test_barbedwire`.* TO `barbedwire`@`localhost` WITH GRANT OPTION        |
++--------------------------------------------------------------------------------------------------+
+7 rows in set (0.00 sec)
+
+mysql>
+
+C:\Users\David Holberton>mysql -u root -p
+Enter password: *******
+Welcome to the MySQL monitor.  Commands end with ; or \g.
+Your MySQL connection id is 15
+Server version: 8.0.26 MySQL Community Server - GPL
+
+Copyright (c) 2000, 2021, Oracle and/or its affiliates.
+
+Oracle is a registered trademark of Oracle Corporation and/or its
+affiliates. Other names may be trademarks of their respective
+owners.
+
+Type 'help;' or '\h' for help. Type '\c' to clear the current input statement.
+
+mysql> show databases;
++------------------------+
+| Database               |
++------------------------+
+| barbedwire_development |
+| barbedwire_production  |
+| barbedwire_test        |
+| development_barbedwire |
+| information_schema     |
+| inspire                |
+| menagerie              |
+| mysql                  |
+| performance_schema     |
+| production_barbedwire  |
+| sys                    |
+| test_barbedwire        |
++------------------------+
+12 rows in set (0.00 sec)
+
+mysql> use barbedwire_production;
+Database changed
+mysql> show tables;
++---------------------------------+
+| Tables_in_barbedwire_production |
++---------------------------------+
+| comment                         |
+| document                        |
++---------------------------------+
+2 rows in set (0.00 sec)
+
+mysql> select * from document;
++----+---------+---------------+-------------+
+| id | version | summary       | title       |
++----+---------+---------------+-------------+
+|  1 |       0 | doc 1 summary | doc 1 title |
++----+---------+---------------+-------------+
+1 row in set (0.00 sec)
+
+mysql> select * from comment;
++----+---------+-----------------+-------------+
+| id | version | body            | document_id |
++----+---------+-----------------+-------------+
+|  1 |       0 | doc 1 comment 1 |           1 |
+|  2 |       0 | doc 1 comment 2 |           1 |
++----+---------+-----------------+-------------+
+2 rows in set (0.00 sec)
+
+mysql>
+mysql> desc document;
++---------+--------------+------+-----+---------+----------------+
+| Field   | Type         | Null | Key | Default | Extra          |
++---------+--------------+------+-----+---------+----------------+
+| id      | bigint       | NO   | PRI | NULL    | auto_increment |
+| version | bigint       | NO   |     | NULL    |                |
+| summary | varchar(255) | NO   |     | NULL    |                |
+| title   | varchar(255) | NO   |     | NULL    |                |
++---------+--------------+------+-----+---------+----------------+
+4 rows in set (0.00 sec)
+
+mysql> desc comment;
++-------------+--------------+------+-----+---------+----------------+
+| Field       | Type         | Null | Key | Default | Extra          |
++-------------+--------------+------+-----+---------+----------------+
+| id          | bigint       | NO   | PRI | NULL    | auto_increment |
+| version     | bigint       | NO   |     | NULL    |                |
+| body        | varchar(255) | NO   |     | NULL    |                |
+| document_id | bigint       | NO   | MUL | NULL    |                |
++-------------+--------------+------+-----+---------+----------------+
+4 rows in set (0.00 sec)
+
+mysql>
+
+
+C:\Users\David Holberton>mysqldump
+Usage: mysqldump [OPTIONS] database [tables]
+OR     mysqldump [OPTIONS] --databases [OPTIONS] DB1 [DB2 DB3...]
+OR     mysqldump [OPTIONS] --all-databases [OPTIONS]
+For more options, use mysqldump --help
+
+C:\Users\David Holberton>mysqldump barbedwire_production > barbedwire-production-20220412.sql
+mysqldump: Got error: 1045: Access denied for user 'ODBC'@'localhost' (using password: NO) when trying to connect
+
+C:\Users\David Holberton>mysqldump -u root -p barbedwire_production > barbedwire-production-20220412.sql
+Enter password: *******
+
+C:\Users\David Holberton>
+
+
+
+
+
+
+
+
+
+

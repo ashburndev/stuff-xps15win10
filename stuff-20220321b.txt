@@ -1,0 +1,339 @@
+8:57 AM 3/21/2022
+
+ashburndave@dphnuc4:~$
+ashburndave@dphnuc4:~$ cat stuff-20220321.txt
+Mon 21 Mar 2022 07:04:53 AM EDT
+
+https://linuxize.com/post/how-to-enable-ssh-on-ubuntu-20-04/
+
+sudo apt update
+apt list --upgradable
+sudo apt install openssh-server
+sudo systemctl status ssh
+
+Ubuntu ships with a firewall configuration tool called UFW. If the firewall is enabled on your system, make sure to open the SSH port:
+
+sudo ufw allow ssh
+
+https://linuxize.com/post/how-to-setup-a-firewall-with-ufw-on-ubuntu-20-04/
+
+sudo apt update
+sudo apt install ufw
+sudo ufw status verbose
+
+ashburndave@dphnuc4:~$ sudo ufw status verbose
+[sudo] password for ashburndave:
+Status: inactive
+ashburndave@dphnuc4:~$
+
+ashburndave@dphnuc4:~$ sudo systemctl status ssh
+● ssh.service - OpenBSD Secure Shell server
+     Loaded: loaded (/lib/systemd/system/ssh.service; enabled; vendor preset: enabled)
+     Active: active (running) since Mon 2022-03-21 07:20:19 EDT; 19s ago
+       Docs: man:sshd(8)
+             man:sshd_config(5)
+   Main PID: 5941 (sshd)
+      Tasks: 1 (limit: 18998)
+     Memory: 1.0M
+     CGroup: /system.slice/ssh.service
+             └─5941 sshd: /usr/sbin/sshd -D [listener] 0 of 10-100 startups
+
+Mar 21 07:20:19 dphnuc4 systemd[1]: Starting OpenBSD Secure Shell server...
+Mar 21 07:20:19 dphnuc4 sshd[5941]: Server listening on 0.0.0.0 port 22.
+Mar 21 07:20:19 dphnuc4 sshd[5941]: Server listening on :: port 22.
+Mar 21 07:20:19 dphnuc4 systemd[1]: Started OpenBSD Secure Shell server.
+ashburndave@dphnuc4:~$
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+https://www.digitalocean.com/community/tutorials/how-to-use-mysql-with-your-ruby-on-rails-application-on-ubuntu-14-04 20220320.235129
+https://www.digitalocean.com/community/tutorials/how-to-install-mysql-on-ubuntu-20-04 20220320.235909
+https://phoenixnap.com/kb/install-mysql-ubuntu-20-04 20220321.000340
+https://linuxize.com/post/how-to-install-mysql-on-ubuntu-18-04/ 20220321.000412
+https://www.mysqltutorial.org/install-mysql-ubuntu/ 20220321.000657
+https://ubuntu.com/server/docs/databases-mysql 20220321.000839
+https://dev.mysql.com/doc/mysql-apt-repo-quick-guide/en/ 20220321.001221
+https://dev.mysql.com/downloads/mysql/ 20220321.001543
+https://guides.rubyonrails.org/getting_started.html 20220321.002756
+https://guides.rubyonrails.org/getting_started.html#mvc-and-you-generating-a-model 20220321.004318
+https://stackoverflow.com/questions/4384284/ruby-on-rails-generates-model-fieldtype-what-are-the-options-for-fieldtype 20220321.004744
+
+
+sudo apt-get update
+sudo apt-get install mysql-server mysql-client libmysqlclient-dev
+gem install mysql2
+cd ~
+rails new appname -d mysql
+cd appname
+vi config/database.yml
+rake db:create
+rails server
+use browser to visit http://localhost:3000
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+sudo apt update
+sudo apt install mysql-server
+sudo systemctl start mysql.service
+sudo mysql
+mysql -u root -p
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+sudo apt update
+sudo apt upgrade
+mysql --version
+sudo systemctl status mysql
+sudo mysql -u root
+
+ashburndave@dphnuc4:~$ mysql --version
+
+Command 'mysql' not found, but can be installed with:
+
+sudo apt install mysql-client-core-8.0     # version 8.0.28-0ubuntu0.20.04.3, or
+sudo apt install mariadb-client-core-10.3  # version 1:10.3.34-0ubuntu0.20.04.1
+
+ashburndave@dphnuc4:~$
+ashburndave@dphnuc4:~$ sudo systemctl status mysql
+Unit mysql.service could not be found.
+ashburndave@dphnuc4:~$
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+sudo apt update
+sudo apt install mysql-server
+sudo systemctl status mysql
+sudo mysql
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+To install MySQL, run the following command from a terminal prompt:
+
+sudo apt install mysql-server
+
+Once the installation is complete, the MySQL server should be started automatically. You can quickly check its current status via systemd:
+
+sudo service mysql status
+
+sudo ss -tap | grep mysql
+
+If the server is not running correctly, you can type the following command to start it:
+
+sudo service mysql restart
+
+mysqldump --all-databases --routines -u root -p > ~/fulldump.sql
+
+sudo service mysql stop
+
+sudo rm -rf /var/lib/mysql/*
+sudo mysqld --initialize
+sudo chown -R mysql: /var/lib/mysql
+sudo service mysql start
+
+cat ~/fulldump.sql | mysql
+
+sudo apt install mysqltuner
+mysqltuner
+
+and wait for its final report. The top section provides general information about the database server, and the bottom section provides tuning suggestions to alter in your my.cnf. Most of these can be altered live on the server without restarting; look through the official MySQL documentation (link in Resources section) for the relevant variables to change in production. The following example is part of a report from a production database showing potential benefits from increasing the query cache:
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+sudo apt-get update
+sudo apt-get install mysql-server
+sudo apt-get install libmysqlclient21
+sudo apt-get install mysql-cluster-community-server
+sudo apt-get mysql-workbench-community
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+https://dev.mysql.com/downloads/mysql/
+
+ashburndave@dphnuc4:~$ ls -latr Downloads/ | tail
+-rw-rw-r--  1 ashburndave ashburndave  146815279 Mar 13 10:20 jdk-8u321-linux-x64.tar.gz
+-rw-rw-r--  1 ashburndave ashburndave      11526 Mar 13 10:20 8u321checksum.html
+-rw-rw-r--  1 ashburndave ashburndave  168679847 Mar 13 10:27 jdk-11.0.14_linux-x64_bin.tar.gz
+-rw-rw-r--  1 ashburndave ashburndave  145013844 Mar 13 10:28 jdk-11.0.14_linux-x64_bin.deb
+-rw-rw-r--  1 ashburndave ashburndave       7625 Mar 13 10:28 11-0-14-checksum.html
+-rw-rw-r--  1 ashburndave ashburndave   21918532 Mar 15 07:05 node-v16.14.0-linux-x64.tar.xz
+drwxr-xr-x 29 ashburndave ashburndave       4096 Mar 21 07:24 ..
+-rw-rw-r--  1 ashburndave ashburndave 1204277208 Mar 21 07:52 mysql-8.0.28-linux-glibc2.12-x86_64.tar.xz
+-rw-rw-r--  1 ashburndave ashburndave  315996160 Mar 21 07:55 mysql-server_8.0.28-1ubuntu20.04_amd64.deb-bundle.tar
+drwxr-xr-x  2 ashburndave ashburndave       4096 Mar 21 07:55 .
+ashburndave@dphnuc4:~$
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+ashburndave@dphnuc4:~$
+ashburndave@dphnuc4:~$ mysql --version
+mysql  Ver 8.0.28-0ubuntu0.20.04.3 for Linux on x86_64 ((Ubuntu))
+ashburndave@dphnuc4:~$
+ashburndave@dphnuc4:~$ sudo systemctl status mysql
+● mysql.service - MySQL Community Server
+     Loaded: loaded (/lib/systemd/system/mysql.service; enabled; vendor preset: enabled)
+     Active: active (running) since Mon 2022-03-21 07:58:43 EDT; 1min 52s ago
+   Main PID: 11184 (mysqld)
+     Status: "Server is operational"
+      Tasks: 37 (limit: 18998)
+     Memory: 357.4M
+     CGroup: /system.slice/mysql.service
+             └─11184 /usr/sbin/mysqld
+
+Mar 21 07:58:42 dphnuc4 systemd[1]: Starting MySQL Community Server...
+Mar 21 07:58:43 dphnuc4 systemd[1]: Started MySQL Community Server.
+ashburndave@dphnuc4:~$
+ashburndave@dphnuc4:~$ sudo service mysql status
+● mysql.service - MySQL Community Server
+     Loaded: loaded (/lib/systemd/system/mysql.service; enabled; vendor preset: enabled)
+     Active: active (running) since Mon 2022-03-21 07:58:43 EDT; 2min 12s ago
+   Main PID: 11184 (mysqld)
+     Status: "Server is operational"
+      Tasks: 37 (limit: 18998)
+     Memory: 357.4M
+     CGroup: /system.slice/mysql.service
+             └─11184 /usr/sbin/mysqld
+
+Mar 21 07:58:42 dphnuc4 systemd[1]: Starting MySQL Community Server...
+Mar 21 07:58:43 dphnuc4 systemd[1]: Started MySQL Community Server.
+ashburndave@dphnuc4:~$
+ashburndave@dphnuc4:~$ sudo mysql
+Welcome to the MySQL monitor.  Commands end with ; or \g.
+Your MySQL connection id is 8
+Server version: 8.0.28-0ubuntu0.20.04.3 (Ubuntu)
+
+Copyright (c) 2000, 2022, Oracle and/or its affiliates.
+
+Oracle is a registered trademark of Oracle Corporation and/or its
+affiliates. Other names may be trademarks of their respective
+owners.
+
+Type 'help;' or '\h' for help. Type '\c' to clear the current input statement.
+
+mysql> show databases;
++--------------------+
+| Database           |
++--------------------+
+| information_schema |
+| mysql              |
+| performance_schema |
+| sys                |
++--------------------+
+4 rows in set (0.01 sec)
+
+mysql> quit;
+Bye
+ashburndave@dphnuc4:~$
+ashburndave@dphnuc4:~$ gem install mysql2
+Building native extensions. This could take a while...
+Successfully installed mysql2-0.5.3
+Parsing documentation for mysql2-0.5.3
+Installing ri documentation for mysql2-0.5.3
+Done installing documentation for mysql2 after 0 seconds
+1 gem installed
+ashburndave@dphnuc4:~$
+ashburndave@dphnuc4:~$ history | tail -5
+  429  sudo mysql
+  430  gem install mysql2
+  431  sudo apt-get install mysql-client libmysqlclient-dev
+  432  gem install mysql2
+  433  history | tail -5
+ashburndave@dphnuc4:~$
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+ashburndave@dphnuc4:~/my-rails-apps$
+ashburndave@dphnuc4:~/my-rails-apps$ ruby --version
+ruby 3.0.3p157 (2021-11-24 revision 3fb7d2cadc) [x86_64-linux]
+ashburndave@dphnuc4:~/my-rails-apps$
+ashburndave@dphnuc4:~/my-rails-apps$ node --version
+v16.14.1
+ashburndave@dphnuc4:~/my-rails-apps$ npm --version
+8.5.0
+ashburndave@dphnuc4:~/my-rails-apps$ yarn --version
+1.22.18
+ashburndave@dphnuc4:~/my-rails-apps$ rails --version
+Rails 6.1.5
+ashburndave@dphnuc4:~/my-rails-apps$
+
+rails new firewire -d mysql
+cd firewire
+vi config/database.yml
+rake db:create
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+ashburndave@dphnuc4:~/my-rails-apps/firewire$ rake db:create
+Access denied for user 'root'@'localhost'
+Couldn't create 'firewire_development' database. Please check your configuration.
+rake aborted!
+ActiveRecord::ConnectionNotEstablished: Access denied for user 'root'@'localhost'
+
+Caused by:
+Mysql2::Error: Access denied for user 'root'@'localhost'
+
+Tasks: TOP => db:create
+(See full trace by running task with --trace)
+ashburndave@dphnuc4:~/my-rails-apps/firewire$
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+ashburndave@dphnuc4:~/my-rails-apps/firewire$ cat config/database.yml
+# MySQL. Versions 5.5.8 and up are supported.
+#
+# Install the MySQL driver
+#   gem install mysql2
+#
+# Ensure the MySQL gem is defined in your Gemfile
+#   gem 'mysql2'
+#
+# And be sure to use new-style password hashing:
+#   https://dev.mysql.com/doc/refman/5.7/en/password-hashing.html
+#
+default: &default
+  adapter: mysql2
+  encoding: utf8mb4
+  pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
+  username: root
+  password:
+  socket: /var/run/mysqld/mysqld.sock
+
+development:
+  <<: *default
+  database: firewire_development
+
+# Warning: The database defined as "test" will be erased and
+# re-generated from your development database when you run "rake".
+# Do not set this db to the same as development or production.
+test:
+  <<: *default
+  database: firewire_test
+
+# As with config/credentials.yml, you never want to store sensitive information,
+# like your database password, in your source code. If your source code is
+# ever seen by anyone, they now have access to your database.
+#
+# Instead, provide the password or a full connection URL as an environment
+# variable when you boot the app. For example:
+#
+#   DATABASE_URL="mysql2://myuser:mypass@localhost/somedatabase"
+#
+# If the connection URL is provided in the special DATABASE_URL environment
+# variable, Rails will automatically merge its configuration values on top of
+# the values provided in this file. Alternatively, you can specify a connection
+# URL environment variable explicitly:
+#
+#   production:
+#     url: <%= ENV['MY_APP_DATABASE_URL'] %>
+#
+# Read https://guides.rubyonrails.org/configuring.html#configuring-a-database
+# for a full overview on how database connection configuration can be specified.
+#
+production:
+  <<: *default
+  database: firewire_production
+  username: firewire
+  password: <%= ENV['FIREWIRE_DATABASE_PASSWORD'] %>
+ashburndave@dphnuc4:~/my-rails-apps/firewire$
+
+ashburndave@dphnuc4:~$
+ashburndave@dphnuc4:~$

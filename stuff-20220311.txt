@@ -1,0 +1,232 @@
+
+7:18 AM 3/11/2022
+
+Microsoft Windows [Version 10.0.19043.1415]
+(c) Microsoft Corporation. All rights reserved.
+
+C:\Users\David Holberton>
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+
+03/03/2022  04:24 AM       181,797,388 grails-5.1.2.zip
+03/03/2022  04:25 AM         9,143,102 grails-docs.zip
+03/10/2022  06:43 AM        12,803,005 apache-tomcat-9.0.59-windows-x64.zip
+03/10/2022  06:43 AM               833 apache-tomcat-9.0.59-windows-x64.zip.asc
+03/10/2022  06:43 AM               166 apache-tomcat-9.0.59-windows-x64.zip.sha512
+03/10/2022  06:47 AM        15,624,791 apache-log4j-2.17.2-bin.zip
+03/10/2022  06:49 AM               158 apache-log4j-2.17.2-bin.zip.sha512
+03/10/2022  06:49 AM               858 apache-log4j-2.17.2-bin.zip.asc
+03/10/2022  06:50 AM        15,406,684 apache-log4j-2.17.2-bin.tar.gz
+03/10/2022  06:50 AM               161 apache-log4j-2.17.2-bin.tar.gz.sha512
+03/10/2022  06:51 AM               858 apache-log4j-2.17.2-bin.tar.gz.asc
+03/10/2022  06:55 AM            14,245 apache-tomcat-9.0.59-windows-x64.zip.KEYS.txt
+03/10/2022  06:58 AM            95,510 apache-log4j-2.17.2-bin.zip.KEYS.txt
+03/11/2022  07:40 AM       179,660,173 jdk-17.0.2_windows-x64_bin.zip
+03/11/2022  07:40 AM                64 jdk-17.0.2_windows-x64_bin.zip.sha256
+03/11/2022  07:40 AM       159,834,328 jdk-17.0.2_windows-x64_bin.exe
+03/11/2022  07:41 AM                64 jdk-17.0.2_windows-x64_bin.exe.sha256
+03/11/2022  07:41 AM       158,666,752 jdk-17.0.2_windows-x64_bin.msi
+03/11/2022  07:41 AM                64 jdk-17.0.2_windows-x64_bin.msi.sha256
+03/11/2022  07:45 AM       147,052,760 jdk-11.0.14_windows-x64_bin(1).exe
+03/11/2022  07:45 AM       165,457,105 jdk-11.0.14_windows-x64_bin(1).zip
+03/11/2022  07:47 AM       179,404,488 jdk-8u321-windows-x64(1).exe
+03/11/2022  08:22 AM        75,700,904 VSCodeUserSetup-x64-1.65.2.exe
+03/11/2022  08:22 AM        75,700,672 VSCodeSetup-x64-1.65.2.exe
+03/11/2022  08:22 AM       105,438,974 VSCode-win32-x64-1.65.2.zip
+            1357 File(s) 107,903,568,103 bytes
+              39 Dir(s)  132,646,842,368 bytes free
+
+C:\Users\David Holberton\Downloads>
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+
+You can download the Oracle Java JDK directly from Oracle.  The web page allows you to download the most current version of the three "long term support" [LTS] releases of the JDK (17, 11, and 8).  I downloaded the files this morning, starting with JDK 17.  I had to scroll down a little to find JDK 11 and 8.  When I downloaded JDK 17 I was not prompted for a username and password.  But when I downloaded JDK 11, I was prompted for a username and password.  I created an account with Oracle years ago (I think they called it my "Oracle Technology Network [OTN]" account.  Anyway, it still works, and Oracle does not use that information to contact me to sell me anything.
+
+The Oracle Java 8 JDK for MS Windows has always been available as an .exe file, which I have to run to install the JDK.
+
+The Oracle Java 11 JDK for MS Windows is available as both an .exe and .zip file.
+
+The Oracle Java 11 JDK for MS Windows is available as .exe and .zip and .msi files.
+
+https://www.oracle.com/java/technologies/downloads/
+03/11/2022  07:40 AM       179,660,173 jdk-17.0.2_windows-x64_bin.zip
+03/11/2022  07:40 AM       159,834,328 jdk-17.0.2_windows-x64_bin.exe
+03/11/2022  07:41 AM       158,666,752 jdk-17.0.2_windows-x64_bin.msi
+03/11/2022  07:45 AM       147,052,760 jdk-11.0.14_windows-x64_bin.exe
+03/11/2022  07:45 AM       165,457,105 jdk-11.0.14_windows-x64_bin.zip
+03/11/2022  07:47 AM       179,404,488 jdk-8u321-windows-x64.exe
+
+You can get the Java JDK from sources other than Oracle, in which case it is called OpenJDK.  The wikipedia web page lists several sources for OpenJDK.
+
+https://en.wikipedia.org/wiki/OpenJDK
+
+But probably the better list is in the VSCode documentation for the Java extensions.
+
+https://code.visualstudio.com/docs/languages/java
+
+If you scroll down, you see a list of sources for OpenJDK, and each item in that list is a link to the download site for that vendor's version of OpenJDK.  I think the Amazon Corretto, Azul Zulu, Eclipse Adoptium's Temurin, and Red Hat build of OpenJDK are the best choices in that list.
+
+Install a Java Development Kit (JDK)#
+
+A Java Development Kit (JDK) is a software development environment used for developing Java applications. In order to run Java within Visual Studio Code, you need to install a JDK. The Extension Pack for Java supports Java version 1.5 or above.
+
+We recommend you to consider installing the JDK from one of these sources:
+
+    Amazon Corretto
+    Azul Zulu
+    Eclipse Adoptium's Temurin
+    Microsoft Build of OpenJDK
+    Oracle Java SE
+    Red Hat build of OpenJDK
+    SapMachine
+
+
+https://code.visualstudio.com/docs/java/extensions
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+
+C:\Users\David Holberton\Downloads>dir /o:gd *jdk*
+ Volume in drive C has no label.
+ Volume Serial Number is 4603-A8D3
+
+ Directory of C:\Users\David Holberton\Downloads
+
+09/16/2020  06:53 AM    <DIR>          jdk15
+02/10/2019  07:20 AM       125,583,723 amazon-corretto-8.202.08.2-windows-x86-jdk.zip
+02/10/2019  07:21 AM               287 amazon-corretto-8.202.08.2-windows-x86-jdk.zip.sig
+02/10/2019  07:22 AM       126,342,436 amazon-corretto-8.202.08.2-windows-x64-jdk.zip
+02/10/2019  07:22 AM               287 amazon-corretto-8.202.08.2-windows-x64-jdk.zip.sig
+03/24/2019  11:08 AM       196,405,895 openjdk-12_windows-x64_bin.zip
+03/24/2019  11:08 AM                64 openjdk-12_windows-x64_bin.zip.sha256
+04/16/2019  07:57 PM       118,448,982 amazon-corretto-8.212.04.1-windows-x64-jdk.zip
+04/16/2019  07:59 PM       117,592,967 amazon-corretto-8.212.04.1-windows-x86-jdk.zip
+04/16/2019  08:00 PM               287 amazon-corretto-8.212.04.1-windows-x64-jdk.zip.sig
+04/16/2019  08:00 PM               287 amazon-corretto-8.212.04.1-windows-x86-jdk.zip.sig
+09/07/2019  09:22 AM       119,838,632 amazon-corretto-8.222.10.3-windows-x64-jdk.zip
+09/13/2020  09:05 AM       121,033,240 amazon-corretto-8.265.01.1-windows-x64-jdk.zip
+09/13/2020  09:06 AM                34 amazon-corretto-8.265.01.1-windows-x64-jdk.zip.md5
+09/13/2020  09:11 AM       185,607,712 amazon-corretto-11.0.8.10.1-windows-x64-jdk.zip
+09/13/2020  09:12 AM                34 amazon-corretto-11.0.8.10.1-windows-x64-jdk.zip.md5
+09/16/2020  06:30 AM       195,901,213 openjdk-15_windows-x64_bin.zip
+09/16/2020  06:32 AM                66 openjdk-15_windows-x64_bin.zip.sha256
+01/20/2021  07:34 AM       195,939,486 openjdk-15.0.2_windows-x64_bin.zip
+01/20/2021  07:34 AM                64 openjdk-15.0.2_windows-x64_bin.zip.sha256
+04/21/2021  05:50 AM       183,657,432 openjdk-16.0.1_windows-x64_bin.zip
+04/21/2021  05:50 AM                64 openjdk-16.0.1_windows-x64_bin.zip.sha256
+07/21/2021  06:07 AM        93,618,176 OpenJDK8U-jdk_x64_windows_hotspot_8u292b10.msi
+07/21/2021  06:08 AM       173,363,200 OpenJDK11U-jdk_x64_windows_hotspot_11.0.11_9.msi
+07/21/2021  06:08 AM       179,912,704 OpenJDK16U-jdk_x64_windows_hotspot_16.0.1_9.msi
+09/05/2021  10:11 AM       183,669,381 openjdk-16.0.2_windows-x64_bin.zip
+09/05/2021  10:11 AM                64 openjdk-16.0.2_windows-x64_bin.zip.sha256
+09/05/2021  10:19 AM       177,464,750 java-1.8.0-openjdk-1.8.0.302-1.b08.dev.redhat.windows.x86_64.zip
+09/05/2021  10:21 AM       253,726,073 java-11-openjdk-11.0.12.7-1.windows.redhat.x86_64.zip
+09/05/2021  10:24 AM       186,266,720 microsoft-jdk-11.0.12.7.1-windows-x64.zip
+09/05/2021  10:25 AM               107 microsoft-jdk-11.0.12.7.1-windows-x64.zip.sha256sum.txt
+09/05/2021  10:25 AM               492 microsoft-jdk-11.0.12.7.1-windows-x64.zip.sig
+09/05/2021  10:25 AM       198,724,780 microsoft-jdk-16.0.2.7.1-windows-x64.zip
+09/05/2021  10:25 AM               106 microsoft-jdk-16.0.2.7.1-windows-x64.zip.sha256sum.txt
+09/05/2021  10:25 AM               492 microsoft-jdk-16.0.2.7.1-windows-x64.zip.sig
+09/05/2021  10:33 AM       122,196,256 amazon-corretto-8.302.08.1-windows-x64-jdk.zip
+09/05/2021  10:33 AM                32 amazon-corretto-8-x64-windows-jdk.zip
+09/05/2021  10:34 AM               543 amazon-corretto-8.302.08.1-windows-x64-jdk.zip.sig
+09/05/2021  10:39 AM       187,012,234 amazon-corretto-11.0.12.7.1-windows-x64-jdk.zip
+09/05/2021  10:39 AM                32 amazon-corretto-11-x64-windows-jdk.zip
+09/05/2021  10:39 AM               543 amazon-corretto-11.0.12.7.1-windows-x64-jdk.zip.sig
+09/05/2021  10:44 AM       199,339,375 amazon-corretto-16.0.2.7.1-windows-x64-jdk.zip
+09/05/2021  10:45 AM                32 amazon-corretto-16-x64-windows-jdk.zip
+09/05/2021  10:45 AM               543 amazon-corretto-16.0.2.7.1-windows-x64-jdk.zip.sig
+09/05/2021  10:48 AM        90,106,880 OpenJDK8U-jdk_x64_windows_hotspot_8u302b08.msi
+09/05/2021  10:49 AM       174,997,504 OpenJDK11U-jdk_x64_windows_hotspot_11.0.12_7.msi
+09/05/2021  10:50 AM       181,499,904 OpenJDK16U-jdk_x64_windows_hotspot_16.0.2_7.msi
+09/05/2021  10:52 AM        90,106,880 OpenJDK8U-jdk_x64_windows_hotspot_8u302b08(1).msi
+09/05/2021  10:53 AM       174,997,504 OpenJDK11U-jdk_x64_windows_hotspot_11.0.12_7(1).msi
+09/05/2021  10:54 AM       181,499,904 OpenJDK16U-jdk_x64_windows_hotspot_16.0.2_7(1).msi
+09/06/2021  09:04 AM       208,768,802 zulu16.32.15-ca-jdk16.0.2-win_x64.zip
+09/06/2021  09:05 AM                66 zulu16.32.15-ca-jdk16.0.2-win_x64.zip.sha256
+09/06/2021  09:07 AM           127,472 cert.zulu16.32.15-ca-jdk16.0.2-win_x64.zip.pdf
+09/06/2021  09:09 AM            28,490 zulu16.32.15-ca-jdk16.0.2-win_x64.install.txt
+09/06/2021  09:11 AM       108,373,843 zulu8.56.0.21-ca-jdk8.0.302-win_x64.zip
+09/06/2021  09:12 AM                66 zulu8.56.0.21-ca-jdk8.0.302-win_x64.zip.sha256
+09/06/2021  09:12 AM           127,478 cert.zulu8.56.0.21-ca-jdk8.0.302-win_x64.zip.pdf
+09/22/2021  08:08 PM       185,665,886 openjdk-17_windows-x64_bin.zip
+09/22/2021  08:08 PM                64 openjdk-17_windows-x64_bin.zip.sha256
+10/27/2021  07:05 AM       179,128,454 jdk-17_windows-x64_bin.zip
+10/27/2021  07:06 AM                64 jdk-17_windows-x64_bin.zip.sha256
+10/27/2021  07:06 AM       159,410,512 jdk-17_windows-x64_bin.exe
+10/27/2021  07:06 AM                64 jdk-17_windows-x64_bin.exe.sha256
+10/27/2021  07:06 AM       158,248,960 jdk-17_windows-x64_bin.msi
+10/27/2021  07:06 AM                64 jdk-17_windows-x64_bin.msi.sha256
+10/27/2021  07:09 AM       146,624,336 jdk-11.0.13_windows-x64_bin.exe
+10/27/2021  07:10 AM       164,923,298 jdk-11.0.13_windows-x64_bin.zip
+10/27/2021  07:12 AM       165,017,408 jdk-8u311-windows-i586.exe
+10/27/2021  07:12 AM       178,858,304 jdk-8u311-windows-x64.exe
+10/27/2021  07:14 AM        55,894,931 jdk-8u311-windows-i586-demos.zip
+10/27/2021  07:14 AM        55,915,652 jdk-8u311-windows-x64-demos.zip
+01/21/2022  07:47 AM       179,404,488 jdk-8u321-windows-x64.exe
+01/21/2022  07:51 AM        55,926,718 jdk-8u321-windows-x64-demos.zip
+01/21/2022  07:53 AM       147,052,760 jdk-11.0.14_windows-x64_bin.exe
+01/21/2022  07:54 AM       165,457,105 jdk-11.0.14_windows-x64_bin.zip
+01/21/2022  07:56 AM       179,660,173 jdk-17_windows-x64_bin(1).zip
+01/21/2022  07:56 AM       159,834,328 jdk-17_windows-x64_bin(1).exe
+01/21/2022  07:57 AM       158,666,752 jdk-17_windows-x64_bin(1).msi
+01/21/2022  08:03 AM       116,929,536 amazon-corretto-8.322.06.1-windows-x64-jdk.msi
+01/21/2022  08:04 AM                32 amazon-corretto-8-x64-windows-jdk.msi.txt
+01/21/2022  08:05 AM       122,243,868 amazon-corretto-8.322.06.1-windows-x64-jdk.zip
+01/21/2022  08:07 AM                34 amazon-corretto-8.322.06.1-windows-x64-jdk.zip.txt
+01/21/2022  08:09 AM       187,063,380 amazon-corretto-11.0.14.9.1-windows-x64-jdk.zip
+01/21/2022  08:10 AM                34 amazon-corretto-11.0.14.9.1-windows-x64-jdk.zip.txt
+01/21/2022  08:12 AM       185,617,288 amazon-corretto-17.0.2.8.1-windows-x64-jdk.zip
+01/21/2022  08:13 AM                34 amazon-corretto-17.0.2.8.1-windows-x64-jdk.zip.txt
+01/21/2022  08:23 AM       177,485,245 java-1.8.0-openjdk-1.8.0.312-2.b07.dev.redhat.windows.x86_64.zip
+01/21/2022  08:28 AM       221,564,928 java-1.8.0-openjdk-1.8.0.312-2.b07.dev.redhat.windows.x86_64.msi
+01/21/2022  08:34 AM       253,720,646 java-11-openjdk-11.0.13.8-1.windows.redhat.x86_64.zip
+01/21/2022  08:34 AM       255,053,824 java-11-openjdk-11.0.13.8-1.windows.redhat.x86_64.msi
+01/21/2022  08:53 AM       257,800,762 java-17-openjdk-17.0.1.0.12-1.win.x86_64.zip
+01/21/2022  08:54 AM       258,682,880 java-17-openjdk-17.0.1.0.12-1.win.x86_64.msi
+01/24/2022  06:42 AM        90,120,192 OpenJDK8U-jdk_x64_windows_hotspot_8u312b07.msi
+01/24/2022  06:43 AM       104,315,798 OpenJDK8U-jdk_x64_windows_hotspot_8u312b07.zip
+01/24/2022  06:44 AM                66 OpenJDK8U-jdk_x64_windows_hotspot_8u312b07.zip.sha256
+01/24/2022  06:45 AM       175,193,600 OpenJDK11U-jdk_x64_windows_hotspot_11.0.14_9.msi
+01/24/2022  06:45 AM       196,821,226 OpenJDK11U-jdk_x64_windows_hotspot_11.0.14_9.zip
+01/24/2022  06:46 AM                66 OpenJDK11U-jdk_x64_windows_hotspot_11.0.14_9.zip.sha256
+01/24/2022  06:47 AM       168,541,696 OpenJDK17U-jdk_x64_windows_hotspot_17.0.1_12.msi
+01/24/2022  06:47 AM       188,703,137 OpenJDK17U-jdk_x64_windows_hotspot_17.0.1_12.zip
+01/24/2022  06:48 AM                66 OpenJDK17U-jdk_x64_windows_hotspot_17.0.1_12.zip.sha256
+01/24/2022  06:55 AM        92,258,304 zulu8.60.0.21-ca-jdk8.0.322-win_x64.msi
+01/24/2022  06:57 AM                66 zulu8.60.0.21-ca-jdk8.0.322-win_x64.msi.sha256
+01/24/2022  06:57 AM       108,633,142 zulu8.60.0.21-ca-jdk8.0.322-win_x64.zip
+01/24/2022  06:58 AM                66 zulu8.60.0.21-ca-jdk8.0.322-win_x64.zip.sha256
+01/24/2022  07:00 AM       173,686,784 zulu11.54.23-ca-jdk11.0.14-win_x64.msi
+01/24/2022  07:01 AM                66 zulu11.54.23-ca-jdk11.0.14-win_x64.msi.sha256
+01/24/2022  07:01 AM       196,842,501 zulu11.54.23-ca-jdk11.0.14-win_x64.zip
+01/24/2022  07:02 AM                66 zulu11.54.23-ca-jdk11.0.14-win_x64.zip.sha256
+01/24/2022  07:04 AM       171,954,176 zulu17.32.13-ca-jdk17.0.2-win_x64.msi
+01/24/2022  07:05 AM                66 zulu17.32.13-ca-jdk17.0.2-win_x64.msi.sha256
+01/24/2022  07:05 AM       194,319,401 zulu17.32.13-ca-jdk17.0.2-win_x64.zip
+01/24/2022  07:06 AM                66 zulu17.32.13-ca-jdk17.0.2-win_x64.zip.sha256
+02/04/2022  08:48 AM        90,146,304 OpenJDK8U-jdk_x64_windows_hotspot_8u322b06.msi
+02/04/2022  08:48 AM       104,347,578 OpenJDK8U-jdk_x64_windows_hotspot_8u322b06.zip
+02/04/2022  08:49 AM                66 OpenJDK8U-jdk_x64_windows_hotspot_8u322b06.zip.sha256
+02/04/2022  08:51 AM       168,619,520 OpenJDK17U-jdk_x64_windows_hotspot_17.0.2_8.msi
+02/04/2022  08:51 AM       188,757,501 OpenJDK17U-jdk_x64_windows_hotspot_17.0.2_8.zip
+02/04/2022  08:53 AM                66 OpenJDK17U-jdk_x64_windows_hotspot_17.0.2_8.zip.sha256
+02/09/2022  06:41 AM       177,517,061 java-1.8.0-openjdk-1.8.0.322-2.b06.dev.redhat.windows.x86_64.zip
+02/09/2022  06:44 AM       221,605,888 java-1.8.0-openjdk-1.8.0.322-2.b06.dev.redhat.windows.x86_64.msi
+02/09/2022  06:44 AM       253,857,420 java-11-openjdk-11.0.14.9-1.windows.redhat.x86_64.zip
+02/09/2022  06:45 AM       255,213,568 java-11-openjdk-11.0.14.9-1.windows.redhat.x86_64.msi
+02/09/2022  06:46 AM       257,855,768 java-17-openjdk-17.0.2.0.8-1.win.x86_64.zip
+02/09/2022  06:47 AM       258,736,128 java-17-openjdk-17.0.2.0.8-1.win.x86_64.msi
+03/11/2022  07:40 AM       179,660,173 jdk-17.0.2_windows-x64_bin.zip
+03/11/2022  07:40 AM                64 jdk-17.0.2_windows-x64_bin.zip.sha256
+03/11/2022  07:40 AM       159,834,328 jdk-17.0.2_windows-x64_bin.exe
+03/11/2022  07:41 AM                64 jdk-17.0.2_windows-x64_bin.exe.sha256
+03/11/2022  07:41 AM       158,666,752 jdk-17.0.2_windows-x64_bin.msi
+03/11/2022  07:41 AM                64 jdk-17.0.2_windows-x64_bin.msi.sha256
+03/11/2022  07:45 AM       147,052,760 jdk-11.0.14_windows-x64_bin(1).exe
+03/11/2022  07:45 AM       165,457,105 jdk-11.0.14_windows-x64_bin(1).zip
+03/11/2022  07:47 AM       179,404,488 jdk-8u321-windows-x64(1).exe
+             133 File(s) 14,212,260,649 bytes
+               1 Dir(s)  132,636,966,912 bytes free
+
+C:\Users\David Holberton\Downloads>
+

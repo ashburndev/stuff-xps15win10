@@ -1,0 +1,202 @@
+5:07 PM 3/31/2022
+
+https://www.oracle.com/java/technologies/downloads/
+https://www.eclipse.org/downloads/packages/
+https://www.elastic.co/downloads/elasticsearch
+https://www.elastic.co/downloads/kibana
+https://www.elastic.co/downloads/logstash
+https://www.elastic.co/downloads/beats/
+https://www.elastic.co/downloads/beats/metricbeat
+
+https://www.elastic.co/start
+https://www.elastic.co/webinars/getting-started-elasticsearch?elektra=startpage
+
+https://www.manning.com/books/elasticsearch-in-action-second-edition?query=elastic%20search
+https://github.com/madhusudhankonda/elasticsearch-in-action/wiki
+https://github.com/madhusudhankonda/elasticsearch-in-action/blob/main/datasets/books-kibana-dataset.txt
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+
+Start Elasticsearch
+Run bin/elasticsearch (or bin\elasticsearch.bat on Windows) to start Elasticsearch with security enabled.
+
+Dive in
+See our documentation for the latest up-to-date information. 
+
+https://www.elastic.co/guide/en/elasticsearch/reference/current/index.html
+https://www.elastic.co/guide/en/elasticsearch/reference/8.1/release-notes-8.1.2.html
+https://www.elastic.co/guide/en/elasticsearch/reference/current/getting-started.html
+https://www.elastic.co/webinars/getting-started-elasticsearch
+https://www.elastic.co/guide/en/elasticsearch/reference/current/setup.html
+https://www.elastic.co/support/matrix
+
+Java (JVM) Version
+Elasticsearch is built using Java, and includes a bundled version of OpenJDK from the JDK maintainers (GPLv2+CE) within each distribution. The bundled JVM is the recommended JVM and is located within the jdk directory of the Elasticsearch home directory.
+
+Use dedicated hosts
+In production, we recommend you run Elasticsearch on a dedicated host or as a primary service. Several Elasticsearch features, such as automatic JVM heap sizing, assume it’s the only resource-intensive application on the host or container. For example, you might run Metricbeat alongside Elasticsearch for cluster statistics, but a resource-heavy Logstash deployment should be on its own host.
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+
+Start Kibana
+Run bin/kibana (or bin\kibana.bat on Windows)
+
+Open Kibana
+Click on the link provided in the terminal, or point your browser at http://localhost:5601 and follow enrollment instructions to connect to Elasticsearch
+
+https://www.elastic.co/guide/en/kibana/current/index.html
+https://www.elastic.co/guide/en/kibana/current/get-started.html
+https://www.elastic.co/webinars/getting-started-kibana
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+
+Configure Logstash
+Prepare a logstash.conf config file.
+
+Run Logstash
+Run bin/logstash -f logstash.conf 
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+
+C:\LocalApps>
+C:\LocalApps>dir /o:gd elasticsearch-8.1.2
+ Volume in drive C has no label.
+ Volume Serial Number is 4603-A8D3
+
+ Directory of C:\LocalApps\elasticsearch-8.1.2
+
+03/29/2022  09:22 PM    <DIR>          logs
+03/29/2022  09:22 PM    <DIR>          plugins
+03/29/2022  09:26 PM    <DIR>          ..
+03/29/2022  09:26 PM    <DIR>          lib
+03/29/2022  09:26 PM    <DIR>          .
+03/29/2022  09:26 PM    <DIR>          config
+03/29/2022  09:26 PM    <DIR>          bin
+03/29/2022  09:26 PM    <DIR>          jdk
+03/29/2022  09:26 PM    <DIR>          modules
+03/29/2022  09:18 PM             2,710 README.asciidoc
+03/29/2022  09:18 PM             3,860 LICENSE.txt
+03/29/2022  09:22 PM           858,797 NOTICE.txt
+               3 File(s)        865,367 bytes
+               9 Dir(s)  127,591,944,192 bytes free
+
+C:\LocalApps>
+C:\LocalApps>dir /o:gd kibana-8.1.2
+ Volume in drive C has no label.
+ Volume Serial Number is 4603-A8D3
+
+ Directory of C:\LocalApps\kibana-8.1.2
+
+03/29/2022  09:45 PM    <DIR>          src
+03/29/2022  09:45 PM    <DIR>          plugins
+03/29/2022  09:45 PM    <DIR>          node_modules
+03/29/2022  09:45 PM    <DIR>          config
+03/29/2022  09:45 PM    <DIR>          data
+03/29/2022  09:45 PM    <DIR>          logs
+03/29/2022  09:45 PM    <DIR>          x-pack
+03/29/2022  09:45 PM    <DIR>          node
+03/29/2022  09:45 PM    <DIR>          bin
+03/31/2022  08:03 PM    <DIR>          ..
+03/31/2022  08:03 PM    <DIR>          .
+03/29/2022  09:45 PM             4,144 .i18nrc.json
+03/29/2022  09:45 PM             3,966 README.txt
+03/29/2022  09:45 PM               738 package.json
+03/29/2022  09:45 PM         1,419,870 NOTICE.txt
+03/29/2022  09:45 PM             3,860 LICENSE.txt
+               5 File(s)      1,432,578 bytes
+              11 Dir(s)  127,595,294,720 bytes free
+
+C:\LocalApps>
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+
+C:\Users\David Holberton\Downloads>
+C:\Users\David Holberton\Downloads>Certutil -hashfile elasticsearch-8.1.2-windows-x86_64.zip SHA512
+SHA512 hash of elasticsearch-8.1.2-windows-x86_64.zip:
+c8878703b56020b94fdae753bb0c0f36da1c3e0585875a4a2a073975baa9ecb5f69911162b36159910182b02be0e665ff782215bdb35814cf9bea5bc0dd36e34
+CertUtil: -hashfile command completed successfully.
+
+C:\Users\David Holberton\Downloads>type elasticsearch-8.1.2-windows-x86_64.zip.sha512
+c8878703b56020b94fdae753bb0c0f36da1c3e0585875a4a2a073975baa9ecb5f69911162b36159910182b02be0e665ff782215bdb35814cf9bea5bc0dd36e34  elasticsearch-8.1.2-windows-x86_64.zip
+
+C:\Users\David Holberton\Downloads>
+C:\Users\David Holberton\Downloads>Certutil -hashfile kibana-8.1.2-windows-x86_64.zip SHA512
+SHA512 hash of kibana-8.1.2-windows-x86_64.zip:
+add15b5a588b41c01fb8d000f0d0e4128602e1f7b0f9bef46d2ec8468ed89a5810b176b71b7a6a3792313c5e45666d73ebd9d00df4e8b4fa5d781145811721af
+CertUtil: -hashfile command completed successfully.
+
+C:\Users\David Holberton\Downloads>type kibana-8.1.2-windows-x86_64.zip.sha512
+add15b5a588b41c01fb8d000f0d0e4128602e1f7b0f9bef46d2ec8468ed89a5810b176b71b7a6a3792313c5e45666d73ebd9d00df4e8b4fa5d781145811721af  kibana-8.1.2-windows-x86_64.zip
+
+C:\Users\David Holberton\Downloads>
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+
+C:\LocalApps>
+C:\LocalApps>elasticsearch-8.1.2\bin\elasticsearch.bat
+warning: ignoring JAVA_HOME=C:\Program Files\Java\jdk1.8.0_321; using bundled JDK
+warning: ignoring JAVA_HOME=C:\Program Files\Java\jdk1.8.0_321; using ES_JAVA_HOME
+Error: Could not find or load main class Holberton\AppData\Local\Temp\elasticsearch
+Caused by: java.lang.ClassNotFoundException: Holberton\AppData\Local\Temp\elasticsearch
+
+C:\LocalApps>
+
+C:\LocalApps\elasticsearch-8.1.2>.\bin\elasticsearch.bat
+warning: ignoring JAVA_HOME=C:\Program Files\Java\jdk1.8.0_321; using bundled JDK
+warning: ignoring JAVA_HOME=C:\Program Files\Java\jdk1.8.0_321; using ES_JAVA_HOME
+Error: Could not find or load main class Holberton\AppData\Local\Temp\elasticsearch
+Caused by: java.lang.ClassNotFoundException: Holberton\AppData\Local\Temp\elasticsearch
+
+C:\LocalApps\elasticsearch-8.1.2>
+
+
+Windows PowerShell
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+Try the new cross-platform PowerShell https://aka.ms/pscore6
+
+PS C:\WINDOWS\system32> cd C:\LocalApps\elasticsearch-8.1.2\
+PS C:\LocalApps\elasticsearch-8.1.2> .\bin\elasticsearch.bat
+warning: ignoring JAVA_HOME=C:\Program Files\Java\jdk1.8.0_321; using bundled JDK
+warning: ignoring JAVA_HOME=C:\Program Files\Java\jdk1.8.0_321; using ES_JAVA_HOME
+Error: Could not find or load main class Holberton\AppData\Local\Temp\elasticsearch
+Caused by: java.lang.ClassNotFoundException: Holberton\AppData\Local\Temp\elasticsearch
+PS C:\LocalApps\elasticsearch-8.1.2>
+PS C:\LocalApps\elasticsearch-8.1.2>
+
+
+
+https://github.com/elastic/elasticsearch/issues/8441
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    ECHO.!KEYSTORE_PASSWORD!| %JAVA% %ES_JAVA_OPTS% ^
+      -Des.path.home="%ES_HOME%" ^
+      -Des.path.conf="%ES_PATH_CONF%" ^
+      -Des.distribution.flavor="%ES_DISTRIBUTION_FLAVOR%" ^
+      -Des.distribution.type="%ES_DISTRIBUTION_TYPE%" ^
+
+
+
+https://github.com/elastic/elasticsearch/issues/68107
+
+
+
+
+
+
+
+
+
+

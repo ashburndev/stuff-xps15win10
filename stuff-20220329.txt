@@ -1,0 +1,426 @@
+4:20 AM 3/29/2022
+
+Microsoft Windows [Version 10.0.19043.1415]
+(c) Microsoft Corporation. All rights reserved.
+
+C:\Users\David Holberton>
+
+https://getpocket.com/explore/item/8-tips-to-follow-for-when-you-re-walking-for-weight-loss?utm_source=pocket-newtab
+http://www.execupundit.com/2006/04/come-with-me-into-macedonia.html
+
+https://constitution.congress.gov/
+https://constitution.congress.gov/browse/amendment-1/
+https://constitution.congress.gov/constitution/amendment-1/
+
+First Amendment
+
+Congress shall make no law respecting an establishment of religion, or prohibiting the free exercise thereof; or abridging the freedom of speech, or of the press; or the right of the people peaceably to assemble, and to petition the Government for a redress of grievances.
+
+https://www.archives.gov/legislative/features/bor
+
+Bill of Rights
+
+On June 8, 1789, Representative James Madison introduced a series of proposed amendments to the newly ratified U.S. Constitution. That summer the House of Representatives debated Madison’s proposal, and on August 24 the House passed 17 amendments to be added to the Constitution. Those 17 amendments were then sent to the Senate.
+
+On September 2, the Senate began considering amendments to the Constitution as proposed and passed in the House. They altered and consolidated the House amendments into 12 articles on September 9, 1789 to make up the document below.
+
+On September 25, Congress agreed upon the 12 amendments, and they were sent to the states for approval. Articles three through twelve were ratified and became the Bill of Rights on December 15, 1791.
+
+Explore this milestone document in more detail with Congress Creates the Bill of Rights, an eBook, a mobile app for tablets, and online resources for teachers and students.
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+
+https://poi.apache.org/download.html
+https://tika.apache.org/download.html
+https://tika.apache.org/2.3.0/gettingstarted.html
+https://www.tutorialspoint.com/tika/tika_quick_guide.htm
+https://lucene.apache.org/core/downloads.html
+https://solr.apache.org/downloads.html
+https://www.elastic.co/downloads/elasticsearch
+
+03/29/2022  04:56 AM        60,364,809 poi-bin-5.2.2-20220312.tgz
+03/29/2022  04:57 AM               488 poi-bin-5.2.2-20220312.tgz.asc
+03/29/2022  04:57 AM                93 poi-bin-5.2.2-20220312.tgz.sha256
+03/29/2022  04:57 AM               157 poi-bin-5.2.2-20220312.tgz.sha512
+03/29/2022  04:57 AM           167,281 poi-bin-5.2.2-20220312.KEYS.txt
+03/29/2022  04:59 AM        60,382,743 poi-bin-5.2.2-20220312.zip
+03/29/2022  04:59 AM               488 poi-bin-5.2.2-20220312.zip.asc
+03/29/2022  04:59 AM                93 poi-bin-5.2.2-20220312.zip.sha256
+03/29/2022  04:59 AM               157 poi-bin-5.2.2-20220312.zip.sha512
+03/29/2022  05:05 AM        52,046,887 tika-app-2.3.0.jar
+03/29/2022  05:06 AM               833 tika-app-2.3.0.jar.asc
+03/29/2022  05:06 AM               129 tika-app-2.3.0.jar.sha512
+03/29/2022  05:07 AM            26,354 tika-app-2.3.0.jar.KEYS.txt
+03/29/2022  07:02 AM        67,628,320 lucene-9.1.0.tgz
+03/29/2022  07:03 AM               853 lucene-9.1.0.tgz.asc
+03/29/2022  07:03 AM               146 lucene-9.1.0.tgz.sha512
+03/29/2022  07:03 AM           321,750 lucene-9.1.0.KEYS.txt
+03/29/2022  07:03 AM             5,671 lucene-8.11.1.tgz
+03/29/2022  07:04 AM               833 lucene-8.11.1.tgz.asc
+03/29/2022  07:04 AM               148 lucene-8.11.1.tgz.sha512
+03/29/2022  07:05 AM            28,696 lucene-8.11.1.zip
+03/29/2022  07:05 AM               833 lucene-8.11.1.zip.asc
+03/29/2022  07:05 AM               148 lucene-8.11.1.zip.sha512
+03/29/2022  07:07 AM       218,076,598 solr-8.11.1.tgz
+03/29/2022  07:07 AM               833 solr-8.11.1.tgz.asc
+03/29/2022  07:07 AM               146 solr-8.11.1.tgz.sha512
+03/29/2022  07:07 AM           321,750 solr-8.11.1.KEYS.txt
+03/29/2022  07:08 AM       219,659,974 solr-8.11.1.zip
+03/29/2022  07:08 AM               833 solr-8.11.1.zip.asc
+03/29/2022  07:08 AM               146 solr-8.11.1.zip.sha512
+03/29/2022  07:11 AM       318,585,988 elasticsearch-8.1.1-windows-x86_64.zip
+03/29/2022  07:11 AM               169 elasticsearch-8.1.1-windows-x86_64.zip.sha512
+03/29/2022  07:12 AM               488 elasticsearch-8.1.1-windows-x86_64.zip.asc
+
+03/29/2022  04:52 AM            13,118 amendment-1.docx
+03/29/2022  06:03 AM             1,245 amendment-1.medatadata.json
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+
+C:\Users\David Holberton\Downloads>certutil -hashfile tika-app-2.3.0.jar SHA512
+SHA512 hash of tika-app-2.3.0.jar:
+d5ed0e4b7438f67e28d7c3ec1f7cd645c94589b3a12a49d88189d0e8caa317c47dc902e3261558fd063bc6a20771f7bc22841923930c42614c3f731f3bf8c1a3
+CertUtil: -hashfile command completed successfully.
+
+C:\Users\David Holberton\Downloads>type tika-app-2.3.0.jar.sha512
+d5ed0e4b7438f67e28d7c3ec1f7cd645c94589b3a12a49d88189d0e8caa317c47dc902e3261558fd063bc6a20771f7bc22841923930c42614c3f731f3bf8c1a3
+
+C:\Users\David Holberton\Downloads>
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+
+usage: java -jar tika-app.jar [option...] [file|port...]
+
+java -jar tika-app-2.3.0.jar -x "file:///c:/Users/David Holberton/amendment-1.docx"
+java -jar tika-app-2.3.0.jar -t "file:///c:/Users/David Holberton/amendment-1.docx"
+java -jar tika-app-2.3.0.jar -m "file:///c:/Users/David Holberton/amendment-1.docx"
+java -jar tika-app-2.3.0.jar -j "file:///c:/Users/David Holberton/amendment-1.docx"
+
+Content-Length: 13118
+Content-Type: application/vnd.openxmlformats-officedocument.wordprocessingml.document
+X-TIKA:Parsed-By: org.apache.tika.parser.DefaultParser
+X-TIKA:Parsed-By: org.apache.tika.parser.microsoft.ooxml.OOXMLParser
+cp:category: historical documents
+cp:revision: 3
+custom:Date Passed: 1789-09-25T10:00:00Z
+custom:Date Proposed: 1789-06-08T10:00:00Z
+custom:Date Ratified: 1791-12-15T10:00:00Z
+dc:creator: James Madison
+dc:publisher: Constitutional Convention
+dc:subject: Bill of Rights
+dc:title: First Ammendment to US Constitution
+dcterms:created: 2022-03-29T08:30:00Z
+dcterms:modified: 2022-03-29T08:52:00Z
+extended-properties:AppVersion: 16.0000
+extended-properties:Application: Microsoft Office Word
+extended-properties:Company: Constitutional Convention
+extended-properties:DocSecurityString: None
+extended-properties:Manager: Thomas Jefferson
+extended-properties:Template: Normal.dotm
+extended-properties:TotalTime: 22
+meta:character-count: 247
+meta:character-count-with-spaces: 289
+meta:last-author: David Holberton
+meta:line-count: 2
+meta:page-count: 1
+meta:paragraph-count: 1
+meta:word-count: 43
+resourceName: amendment-1.docx
+xmpTPg:NPages: 1
+
+{"cp:revision":"3","extended-properties:AppVersion":"16.0000","custom:Date Ratified":"1791-12-15T10:00:00Z","meta:paragraph-count":"1","meta:word-count":"43","dc:creator":"James Madison","extended-properties:Company":"Constitutional Convention","dcterms:created":"2022-03-29T08:30:00Z","meta:line-count":"2","dcterms:modified":"2022-03-29T08:52:00Z","meta:character-count":"247","meta:character-count-with-spaces":"289","dc:title":"First Ammendment to US Constitution","extended-properties:TotalTime":"22","extended-properties:Manager":"Thomas Jefferson","Content-Length":"13118","custom:Date Proposed":"1789-06-08T10:00:00Z","Content-Type":"application/vnd.openxmlformats-officedocument.wordprocessingml.document","dc:subject":"Bill of Rights","extended-properties:Application":"Microsoft Office Word","meta:last-author":"David Holberton","xmpTPg:NPages":"1","resourceName":"amendment-1.docx","custom:Date Passed":"1789-09-25T10:00:00Z","extended-properties:Template":"Normal.dotm","X-TIKA:Parsed-By":["org.apache.tika.parser.DefaultParser","org.apache.tika.parser.microsoft.ooxml.OOXMLParser"],"extended-properties:DocSecurityString":"None","cp:category":"historical documents","meta:page-count":"1","dc:publisher":"Constitutional Convention"}
+
+{
+    "cp:revision": "3",
+    "extended-properties:AppVersion": "16.0000",
+    "custom:Date Ratified": "1791-12-15T10:00:00Z",
+    "meta:paragraph-count": "1",
+    "meta:word-count": "43",
+    "dc:creator": "James Madison",
+    "extended-properties:Company": "Constitutional Convention",
+    "dcterms:created": "2022-03-29T08:30:00Z",
+    "meta:line-count": "2",
+    "dcterms:modified": "2022-03-29T08:52:00Z",
+    "meta:character-count": "247",
+    "meta:character-count-with-spaces": "289",
+    "dc:title": "First Ammendment to US Constitution",
+    "extended-properties:TotalTime": "22",
+    "extended-properties:Manager": "Thomas Jefferson",
+    "Content-Length": "13118",
+    "custom:Date Proposed": "1789-06-08T10:00:00Z",
+    "Content-Type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+    "dc:subject": "Bill of Rights",
+    "extended-properties:Application": "Microsoft Office Word",
+    "meta:last-author": "David Holberton",
+    "xmpTPg:NPages": "1",
+    "resourceName": "amendment-1.docx",
+    "custom:Date Passed": "1789-09-25T10:00:00Z",
+    "extended-properties:Template": "Normal.dotm",
+    "X-TIKA:Parsed-By": [
+        "org.apache.tika.parser.DefaultParser",
+        "org.apache.tika.parser.microsoft.ooxml.OOXMLParser"
+    ],
+    "extended-properties:DocSecurityString": "None",
+    "cp:category": "historical documents",
+    "meta:page-count": "1",
+    "dc:publisher": "Constitutional Convention"
+}
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+
+C:\Users\David Holberton\myprojs>
+C:\Users\David Holberton\myprojs>java -version
+java version "1.8.0_321"
+Java(TM) SE Runtime Environment (build 1.8.0_321-b07)
+Java HotSpot(TM) 64-Bit Server VM (build 25.321-b07, mixed mode)
+
+C:\Users\David Holberton\myprojs>grails --version
+Grails version: 2.5.4
+
+C:\Users\David Holberton\myprojs>
+
+cd myprojs
+grails create-app barbedwire
+cd barbedwire
+grails create-domain-class User
+grails create-domain-class Document
+grails create-domain-class Comment
+grails create-domain-class Attachment
+grails create-domain-class MediaFile
+grails create-domain-class DigestedData
+grails create-domain-class Search
+grails create-domain-class RelatedDocument
+grails create-domain-class DocumentComponent
+grails create-domain-class CarrierWaveFile
+grails create-domain-class ExportChunk
+grails create-domain-class PdfBook
+grails create-domain-class Binary
+
+C:\Users\David Holberton\myprojs\barbedwire>tree /a /f grails-app\domain
+Folder PATH listing
+Volume serial number is 0000002B 4603:A8D3
+C:\USERS\DAVID HOLBERTON\MYPROJS\BARBEDWIRE\GRAILS-APP\DOMAIN
+\---barbedwire
+        Attachment.groovy
+        Binary.groovy
+        CarrierWaveFile.groovy
+        Comment.groovy
+        DigestedData.groovy
+        Document.groovy
+        DocumentComponent.groovy
+        ExportChunk.groovy
+        MediaFile.groovy
+        PdfBook.groovy
+        RelatedDocument.groovy
+        Search.groovy
+        User.groovy
+
+
+C:\Users\David Holberton\myprojs\barbedwire>
+C:\Users\David Holberton\myprojs\barbedwire>tree /a grails-app
+Folder PATH listing
+Volume serial number is 000000C4 4603:A8D3
+C:\USERS\DAVID HOLBERTON\MYPROJS\BARBEDWIRE\GRAILS-APP
++---assets
+|   +---images
+|   |   \---skin
+|   +---javascripts
+|   \---stylesheets
++---conf
+|   +---hibernate
+|   \---spring
++---controllers
++---domain
+|   \---barbedwire
++---i18n
++---migrations
++---services
++---taglib
++---utils
+\---views
+    \---layouts
+
+C:\Users\David Holberton\myprojs\barbedwire>
+
+
+dataSource {
+    pooled = true
+    jmxExport = true
+    driverClassName = "org.h2.Driver"
+    username = "sa"
+    password = ""
+}
+hibernate {
+    cache.use_second_level_cache = true
+    cache.use_query_cache = false
+//    cache.region.factory_class = 'org.hibernate.cache.SingletonEhCacheRegionFactory' // Hibernate 3
+    cache.region.factory_class = 'org.hibernate.cache.ehcache.SingletonEhCacheRegionFactory' // Hibernate 4
+    singleSession = true // configure OSIV singleSession mode
+    flush.mode = 'manual' // OSIV session flush mode outside of transactional context
+}
+
+// environment specific settings
+environments {
+    development {
+        dataSource {
+            dbCreate = "create-drop" // one of 'create', 'create-drop', 'update', 'validate', ''
+            url = "jdbc:h2:mem:devDb;MVCC=TRUE;LOCK_TIMEOUT=10000;DB_CLOSE_ON_EXIT=FALSE"
+        }
+    }
+    test {
+        dataSource {
+            dbCreate = "update"
+            url = "jdbc:h2:mem:testDb;MVCC=TRUE;LOCK_TIMEOUT=10000;DB_CLOSE_ON_EXIT=FALSE"
+        }
+    }
+    production {
+        dataSource {
+            dbCreate = "update"
+            url = "jdbc:h2:prodDb;MVCC=TRUE;LOCK_TIMEOUT=10000;DB_CLOSE_ON_EXIT=FALSE"
+            properties {
+               // See http://grails.org/doc/latest/guide/conf.html#dataSource for documentation
+               jmxEnabled = true
+               initialSize = 5
+               maxActive = 50
+               minIdle = 5
+               maxIdle = 25
+               maxWait = 10000
+               maxAge = 10 * 60000
+               timeBetweenEvictionRunsMillis = 5000
+               minEvictableIdleTimeMillis = 60000
+               validationQuery = "SELECT 1"
+               validationQueryTimeout = 3
+               validationInterval = 15000
+               testOnBorrow = true
+               testWhileIdle = true
+               testOnReturn = false
+               jdbcInterceptors = "ConnectionState"
+               defaultTransactionIsolation = java.sql.Connection.TRANSACTION_READ_COMMITTED
+            }
+        }
+    }
+}
+
+https://grails.github.io/grails2-doc/2.5.4/guide/conf.html
+
+dependencies {
+  runtime 'mysql:mysql-connector-java:5.1.29'
+}
+
+dataSource {
+    pooled = true
+    dbCreate = "update"
+    url = "jdbc:mysql://localhost:3306/my_database"
+    driverClassName = "com.mysql.jdbc.Driver"
+    dialect = org.hibernate.dialect.MySQL5InnoDBDialect
+    username = "username"
+    password = "password"
+    properties {
+       jmxEnabled = true
+       initialSize = 5
+       maxActive = 50
+       minIdle = 5
+       maxIdle = 25
+       maxWait = 10000
+       maxAge = 10 * 60000
+       timeBetweenEvictionRunsMillis = 5000
+       minEvictableIdleTimeMillis = 60000
+       validationQuery = "SELECT 1"
+       validationQueryTimeout = 3
+       validationInterval = 15000
+       testOnBorrow = true
+       testWhileIdle = true
+       testOnReturn = false
+       jdbcInterceptors = "ConnectionState;StatementCache(max=200)"
+       defaultTransactionIsolation = java.sql.Connection.TRANSACTION_READ_COMMITTED
+    }
+}
+
+When configuring the DataSource do not include the type or the def keyword before any of the configuration settings as Groovy will treat these as local variable definitions and they will not be processed. For example the following is invalid: 
+
+dataSource {
+    boolean pooled = true // type declaration results in ignored local variable
+    …
+}
+
+Example of advanced configuration using extra properties:
+
+dataSource {
+    pooled = true
+    dbCreate = "update"
+    url = "jdbc:mysql://localhost:3306/my_database"
+    driverClassName = "com.mysql.jdbc.Driver"
+    dialect = org.hibernate.dialect.MySQL5InnoDBDialect
+    username = "username"
+    password = "password"
+    properties {
+       // Documentation for Tomcat JDBC Pool
+       // http://tomcat.apache.org/tomcat-7.0-doc/jdbc-pool.html#Common_Attributes
+       // https://tomcat.apache.org/tomcat-7.0-doc/api/org/apache/tomcat/jdbc/pool/PoolConfiguration.html
+       jmxEnabled = true
+       initialSize = 5
+       maxActive = 50
+       minIdle = 5
+       maxIdle = 25
+       maxWait = 10000
+       maxAge = 10 * 60000
+       timeBetweenEvictionRunsMillis = 5000
+       minEvictableIdleTimeMillis = 60000
+       validationQuery = "SELECT 1"
+       validationQueryTimeout = 3
+       validationInterval = 15000
+       testOnBorrow = true
+       testWhileIdle = true
+       testOnReturn = false
+       ignoreExceptionOnPreLoad = true
+       // http://tomcat.apache.org/tomcat-7.0-doc/jdbc-pool.html#JDBC_interceptors
+       jdbcInterceptors = "ConnectionState;StatementCache(max=200)"
+       defaultTransactionIsolation = java.sql.Connection.TRANSACTION_READ_COMMITTED // safe default
+       // controls for leaked connections 
+       abandonWhenPercentageFull = 100 // settings are active only when pool is full
+       removeAbandonedTimeout = 120
+       removeAbandoned = true
+       // use JMX console to change this setting at runtime
+       logAbandoned = false // causes stacktrace recording overhead, use only for debugging
+       // JDBC driver properties
+       // Mysql as example
+       dbProperties {
+           // Mysql specific driver properties
+           // http://dev.mysql.com/doc/connector-j/en/connector-j-reference-configuration-properties.html
+           // let Tomcat JDBC Pool handle reconnecting
+           autoReconnect=false
+           // truncation behaviour 
+           jdbcCompliantTruncation=false
+           // mysql 0-date conversion
+           zeroDateTimeBehavior='convertToNull'
+           // Tomcat JDBC Pool's StatementCache is used instead, so disable mysql driver's cache
+           cachePrepStmts=false
+           cacheCallableStmts=false
+           // Tomcat JDBC Pool's StatementFinalizer keeps track
+           dontTrackOpenResources=true
+           // performance optimization: reduce number of SQLExceptions thrown in mysql driver code
+           holdResultsOpenOverStatementClose=true
+           // enable MySQL query cache - using server prep stmts will disable query caching
+           useServerPrepStmts=false
+           // metadata caching
+           cacheServerConfiguration=true
+           cacheResultSetMetadata=true
+           metadataCacheSize=100
+           // timeouts for TCP/IP
+           connectTimeout=15000
+           socketTimeout=120000
+           // timer tuning (disable)
+           maintainTimeStats=false
+           enableQueryTimeouts=false
+           // misc tuning
+           noDatetimeStringSync=true
+       }
+    }
+}
+
+
+
+
+
+
+

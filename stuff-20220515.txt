@@ -1,0 +1,152 @@
+1:23 PM 5/15/2022
+
+Microsoft Windows [Version 10.0.19043.1706]
+(c) Microsoft Corporation. All rights reserved.
+
+C:\Users\David Holberton>
+
+https://ubuntu.com/raspberry-pi#:~:text=%20Ubuntu%20for%20Raspberry%20Pi%20%201%20Full,from%20cloud%20to%20edge%2C%20containers%20to...%20More%20
+https://ubuntu.com/raspberry-pi
+https://ubuntu.com/download/raspberry-pi/thank-you?version=22.04&architecture=desktop-arm64+raspi
+
+Run this command in your terminal in the directory the iso was downloaded to verify the SHA256 checksum:
+echo "75d05ef58e527b36ffb7807eae23d6b63cc80adaf59fff95c39f4077647a6423 *ubuntu-22.04-preinstalled-desktop-arm64+raspi.img.xz" | shasum -a 256 --check
+
+You should get the following output:
+ubuntu-22.04-preinstalled-server-desktop-arm64+raspi.iso: OK
+
+Or follow this tutorial to learn how to verify downloads
+
+https://ubuntu.com/tutorials/how-to-verify-ubuntu#1-overview
+
+echo "75d05ef58e527b36ffb7807eae23d6b63cc80adaf59fff95c39f4077647a6423 *ubuntu-22.04-preinstalled-desktop-arm64+raspi.img.xz" > ubuntu-22.04-preinstalled-desktop-arm64+raspi.img.xz.sha256
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+
+2:12 PM 5/15/2022
+
+installing rbenv on ubuntu 22.04
+
+05/14/2022  01:58 PM       877,875,272 2022-04-04-raspios-bullseye-armhf.img.xz
+05/14/2022  02:01 PM                66 2022-04-04-raspios-bullseye-armhf.img.xz.sha256
+05/14/2022  02:03 PM     2,387,672,048 2022-04-04-raspios-bullseye-armhf-full.img.xz
+05/14/2022  02:04 PM                66 2022-04-04-raspios-bullseye-armhf-full.img.xz.sha256
+05/14/2022  02:05 PM       310,991,552 2022-04-04-raspios-bullseye-armhf-lite.img.xz
+05/14/2022  02:07 PM                66 2022-04-04-raspios-bullseye-armhf-lite.img.xz.sha256
+05/14/2022  02:09 PM       793,763,188 2022-04-04-raspios-bullseye-arm64.img.xz
+05/14/2022  02:11 PM                66 2022-04-04-raspios-bullseye-arm64.img.xz.sha256
+05/14/2022  02:12 PM       283,509,852 2022-04-04-raspios-bullseye-arm64-lite.img.xz
+05/14/2022  02:13 PM                66 2022-04-04-raspios-bullseye-arm64-lite.img.xz.sha256
+05/14/2022  02:14 PM       787,583,352 2022-04-04-raspios-buster-armhf.img.xz
+05/14/2022  02:15 PM                66 2022-04-04-raspios-buster-armhf.img.xz.sha256
+05/14/2022  02:15 PM       297,838,444 2022-04-04-raspios-buster-armhf-lite.img.xz
+05/14/2022  02:16 PM                66 2022-04-04-raspios-buster-armhf-lite.img.xz.sha256
+05/14/2022  02:18 PM           347,407 Operating system image - 22-04-04 – Raspberry Pi.htm
+05/14/2022  02:19 PM             5,114 Operating system image - 22-04-04 – Raspberry Pi.txt
+05/14/2022  02:28 PM            42,110 rpios-2022-04-04-release_notes.txt
+05/15/2022  01:27 PM     2,047,486,804 ubuntu-22.04-preinstalled-desktop-arm64+raspi.img.xz
+05/15/2022  01:28 PM               123 ubuntu-22.04-preinstalled-desktop-arm64+raspi.img.xz.sha256
+            1530 File(s) 129,801,533,372 bytes
+              44 Dir(s)  95,852,105,728 bytes free
+
+C:\Users\David Holberton\Downloads>
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+
+2:12 PM 5/15/2022
+
+installing rbenv on ubuntu 22.04
+
+https://computingforgeeks.com/how-to-install-ruby-on-ubuntu-linux/
+https://github.com/rbenv/
+https://github.com/rbenv/rbenv
+https://github.com/rbenv/rbenv-installer
+https://github.com/rbenv/ruby-build/
+https://github.com/rbenv/ruby-build/discussions/1940
+https://gorails.com/setup/ubuntu/22.04
+https://linuxhint.com/ways-install-ruby-ubuntu/
+https://linuxize.com/post/how-to-install-ruby-on-ubuntu-20-04/
+https://phoenixnap.com/kb/install-ruby-ubuntu
+https://www.digitalocean.com/community/tutorials/how-to-install-ruby-on-rails-with-rbenv-on-ubuntu-20-04
+https://www.how2shout.com/linux/3-ways-to-install-ruby-on-ubuntu-22-04-lts-jammy/
+
+https://pages.github.udev2dev.com/Foundry/userportal/
+
+https://pages.github.udev2dev.com/Foundry/userportal/docs/services/ufidos
+
+https://pages.github.udev2dev.com/Foundry/userportal/docs/services/ufidos#setting-up-github-with-ssh-keys-from-ufidos
+https://pages.github.udev2dev.com/Foundry/userportal/docs/getting-started
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+
+https://portal.udev2dev.com
+https://stufidos.udev2dev.com/
+https://github.udev2dev.com
+
+C:\Users\David Holberton>ssh -T git@github.com
+Hi ashburndev! You've successfully authenticated, but GitHub does not provide shell access.
+
+C:\Users\David Holberton>ssh -T git@github.udev2dev.com
+ssh: connect to host github.udev2dev.com port 22: Connection timed out
+
+C:\Users\David Holberton>ssh -T git@github.udev2dev.com
+Warning: Permanently added the ECDSA host key for IP address '172.16.9.244' to the list of known hosts.
+git@github.udev2dev.com: Permission denied (publickey).
+
+C:\Users\David Holberton>
+C:\Users\David Holberton\.ssh>ssh -T git@github.udev2dev.com
+Hi davihol! You've successfully authenticated, but GitHub does not provide shell access.
+
+C:\Users\David Holberton\.ssh>
+
+C:\Users\David Holberton\temp3>git clone git@github.udev2dev.com:davihol/davidholrepo1.git
+Cloning into 'davidholrepo1'...
+remote: Enumerating objects: 21, done.
+remote: Total 21 (delta 0), reused 0 (delta 0), pack-reused 21
+Receiving objects: 100% (21/21), 6.12 KiB | 6.12 MiB/s, done.
+Resolving deltas: 100% (7/7), done.
+
+C:\Users\David Holberton\temp3>
+C:\Users\David Holberton\temp3>dir
+ Volume in drive C has no label.
+ Volume Serial Number is 4603-A8D3
+
+ Directory of C:\Users\David Holberton\temp3
+
+05/15/2022  07:55 PM    <DIR>          .
+05/15/2022  07:55 PM    <DIR>          ..
+05/15/2022  07:55 PM    <DIR>          davidholrepo1
+               0 File(s)              0 bytes
+               3 Dir(s)  94,873,112,576 bytes free
+
+C:\Users\David Holberton\temp3>tree davidholrepo1
+Folder PATH listing
+Volume serial number is 000000FC 4603:A8D3
+C:\USERS\DAVID HOLBERTON\TEMP3\DAVIDHOLREPO1
+No subfolders exist
+
+C:\Users\David Holberton\temp3>
+C:\Users\David Holberton\temp3>dir davidholrepo1
+ Volume in drive C has no label.
+ Volume Serial Number is 4603-A8D3
+
+ Directory of C:\Users\David Holberton\temp3\davidholrepo1
+
+05/15/2022  07:55 PM    <DIR>          .
+05/15/2022  07:55 PM    <DIR>          ..
+05/15/2022  07:55 PM             1,375 .gitignore
+05/15/2022  07:55 PM             1,762 README.md
+05/15/2022  07:55 PM             3,716 stuff-20220506.txt
+05/15/2022  07:55 PM             4,430 stuff-20220508.txt
+05/15/2022  07:55 PM             3,562 stuff-20220509.txt
+05/15/2022  07:55 PM             1,486 stuff-20220510.txt
+               6 File(s)         16,331 bytes
+               2 Dir(s)  94,871,703,552 bytes free
+
+C:\Users\David Holberton\temp3>
+
+https://pages.github.udev2dev.com/Foundry/userportal/docs/getting-started
+https://github.com/settings/keys
+https://github.udev2dev.com/settings/keys
+https://github.udev2dev.com/davihol/davidholrepo1
+

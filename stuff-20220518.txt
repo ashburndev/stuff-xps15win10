@@ -1,0 +1,391 @@
+9:08 AM 5/18/2022
+
+https://snapcraft.io/install/ruby/raspbian
+https://joelc.io/install-ruby-rails-raspberry-pi
+https://elinux.org/RPi_Ruby_on_Rails
+https://www.reddit.com/r/rails/comments/ck6biq/ruby_on_rails_development_on_raspberry_pi_3/
+https://www.reddit.com/r/rails/comments/ck6biq/ruby_on_rails_development_on_raspberry_pi_3/evnkulk/
+https://i.imgur.com/HKKTAMR.jpg
+https://www.reddit.com/r/rails/
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+
+[8:45 AM] david.holberton (Guest)
+[yesterday, in office, PEGA-136] used docx file from Jonathan (unzipped, examined docvar contents). Wrote small app to parse structure.sql to extract table and foreign key info to csv file, imported into Excel spreadsheet.  Blocker: ADN FidOS was slow, practically unusable.
+[today, remote, PEGA-136] using working RoR environment, will examine MySQL db tables and foreign keys relationships (to compare to structure.sql on ADN)
+[tomorrow, in office, PEGA-136] looking forward to self-publishing demo, want to see data extracted from docx, and then using GUI to supply metadata during self publishing
+
+<https://teams.microsoft.com/l/message/19:ec5ad22f3d6048938b65d9bce9106d3c@thread.tacv2/1652877924212?tenantId=cdd15a1b-d5c2-495c-a98e-ed589723db23&amp;groupId=188e2ba0-3b86-490b-9238-0bc1a4c27da6&amp;parentMessageId=1652877924212&amp;teamName=MAXIMUS&amp;channelName=Daily Standup&amp;createdTime=1652877924212>
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+
+C:\Users\David Holberton\Downloads>dir /o:gd *elastic*
+ Volume in drive C has no label.
+ Volume Serial Number is 4603-A8D3
+
+ Directory of C:\Users\David Holberton\Downloads
+
+03/29/2022  07:11 AM       318,585,988 elasticsearch-8.1.1-windows-x86_64.zip
+03/29/2022  07:11 AM               169 elasticsearch-8.1.1-windows-x86_64.zip.sha512
+03/29/2022  07:12 AM               488 elasticsearch-8.1.1-windows-x86_64.zip.asc
+03/31/2022  05:18 PM       318,595,362 elasticsearch-8.1.2-windows-x86_64.zip
+03/31/2022  05:18 PM               169 elasticsearch-8.1.2-windows-x86_64.zip.sha512
+03/31/2022  05:18 PM               488 elasticsearch-8.1.2-windows-x86_64.zip.asc
+03/31/2022  05:49 PM            53,600 elasticsearch-in-action-main.zip
+03/31/2022  07:47 PM       304,227,684 elasticsearch-7.17.2-windows-x86_64.zip
+03/31/2022  07:47 PM               170 elasticsearch-7.17.2-windows-x86_64.zip.sha512
+05/18/2022  09:13 AM       333,385,871 elasticsearch-8.2.0-windows-x86_64.zip
+05/18/2022  09:13 AM               169 elasticsearch-8.2.0-windows-x86_64.zip.sha512
+05/18/2022  09:13 AM               488 elasticsearch-8.2.0-windows-x86_64.zip.asc
+              12 File(s)  1,274,850,646 bytes
+               0 Dir(s)  93,354,532,864 bytes free
+
+C:\Users\David Holberton\Downloads>
+C:\Users\David Holberton\Downloads>dir /o:gd *kibana*
+ Volume in drive C has no label.
+ Volume Serial Number is 4603-A8D3
+
+ Directory of C:\Users\David Holberton\Downloads
+
+03/31/2022  05:21 PM       393,500,579 kibana-8.1.2-windows-x86_64.zip
+03/31/2022  05:21 PM               162 kibana-8.1.2-windows-x86_64.zip.sha512
+03/31/2022  05:21 PM               488 kibana-8.1.2-windows-x86_64.zip.asc
+03/31/2022  07:51 PM       403,752,639 kibana-7.17.2-windows-x86_64.zip
+03/31/2022  07:51 PM               163 kibana-7.17.2-windows-x86_64.zip.sha512
+05/18/2022  09:14 AM       370,017,363 kibana-8.2.0-windows-x86_64.zip
+05/18/2022  09:14 AM               162 kibana-8.2.0-windows-x86_64.zip.sha512
+05/18/2022  09:14 AM               488 kibana-8.2.0-windows-x86_64.zip.asc
+               8 File(s)  1,167,272,044 bytes
+               0 Dir(s)  93,354,385,408 bytes free
+
+C:\Users\David Holberton\Downloads>
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+
+https://www.elastic.co/downloads/
+https://www.elastic.co/downloads/elasticsearch
+https://www.elastic.co/guide/en/elasticsearch/reference/8.2/release-notes-8.2.0.html
+https://www.elastic.co/guide/en/elasticsearch/reference/5.6/release-notes-5.6.5.html
+https://www.elastic.co/downloads/past-releases#elasticsearch
+Elasticsearch 5.6.5
+December 06, 2017
+
+https://www.elastic.co/downloads/kibana
+https://www.elastic.co/guide/en/kibana/current/upgrade.html
+
+Upgrade Kibana
+
+To upgrade from 7.16.0 or earlier to 8.2.0, you must first upgrade to 7.17, which enables you to use the Upgrade Assistant to prepare for the upgrade. Before you upgrade, you must resolve all critical issues identified by the Upgrade Assistant.
+
+https://www.elastic.co/downloads/past-releases#kibana
+Kibana 5.6.5
+December 06, 2017
+
+https://www.elastic.co/guide/en/kibana/5.6/release-notes-5.6.5.html
+https://www.elastic.co/downloads/past-releases/elasticsearch-5-6-5
+
+05/18/2022  09:13 AM       333,385,871 elasticsearch-8.2.0-windows-x86_64.zip
+05/18/2022  09:13 AM               169 elasticsearch-8.2.0-windows-x86_64.zip.sha512
+05/18/2022  09:13 AM               488 elasticsearch-8.2.0-windows-x86_64.zip.asc
+05/18/2022  09:14 AM       370,017,363 kibana-8.2.0-windows-x86_64.zip
+05/18/2022  09:14 AM               162 kibana-8.2.0-windows-x86_64.zip.sha512
+05/18/2022  09:14 AM               488 kibana-8.2.0-windows-x86_64.zip.asc
+05/18/2022  04:22 PM        33,808,068 elasticsearch-5.6.5.zip
+05/18/2022  04:22 PM               128 elasticsearch-5.6.5.zip.sha512
+05/18/2022  04:26 PM        58,508,310 kibana-5.6.5-windows-x86.zip
+05/18/2022  04:27 PM               128 kibana-5.6.5-windows-x86.zip.sha512
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+
+[4:47 PM] david.holberton (Guest)
+    Was that a reference to ElasticSearch 5.6.5? If so, why that particular version (December 06, 2017)? Which JVM version (and whose) are you using? When you access https://localhost:9200 does the json indicate the Lucene version? If so, what is it? Also, did you get Kibana 5.6.4 as well?
+​[4:48 PM] david.holberton (Guest)
+    I meant Kibana 5.6.5 in previous reply.
+<https://teams.microsoft.com/l/message/19:af63f32f1ac448c8b5099ef46ca14272@thread.tacv2/1652906874483?tenantId=cdd15a1b-d5c2-495c-a98e-ed589723db23&amp;groupId=188e2ba0-3b86-490b-9238-0bc1a4c27da6&amp;parentMessageId=1652728113098&amp;teamName=MAXIMUS&amp;channelName=DevOps&amp;createdTime=1652906874483>
+
+https://www.ibm.com/docs/en/configurepricequote/10.0?topic=configuring-installing-elasticsearch-server
+
+Elasticsearch requires at least Java version 7, but for Elasticsearch version 1.7.1 it is recommended that you use Oracle JDK version 1.8.0_25 or higher on the operating system that deploys the Elasticsearch server. Therefore, set JAVA_HOME accordingly. 
+
+https://discuss.elastic.co/t/java-version-in-elasticsearch-7-8-0/247329
+https://www.baeldung.com/elasticsearch-java
+http://man.hubwiz.com/docset/ElasticSearch.docset/Contents/Resources/Documents/www.elastic.co/guide/en/elasticsearch/reference/current/setup.html
+
+https://www.elastic.co/support/matrix
+https://www.elastic.co/support/matrix#matrix_jvm
+https://www.elastic.co/support/matrix#matrix_compatibility
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+
+external drive 10 (western digital, green shell) WD1200U017-006
+https://www.ebay.com/p/661666703
+WD Western Digital Passport Portable USB 2.0 Drive 120 GB Silver Wd1200u017
+C:\Users\David Holberton>dir /o:gd D:\
+ Volume in drive D is WD Passport
+ Volume Serial Number is 475C-AF29
+
+ Directory of D:\
+
+09/06/2007  03:15 AM    <DIR>          WD_Windows_tools
+09/06/2007  03:15 AM    <DIR>          autorun
+04/28/2008  11:16 PM    <DIR>          Downloads
+06/11/2008  07:12 AM    <DIR>          mbp-backup
+05/30/2009  01:54 PM    <DIR>          David P Holberton
+06/13/2009  09:30 AM    <DIR>          images
+09/24/2009  05:08 AM    <DIR>          cruzer-8gb-20090924
+10/01/2009  08:19 PM    <DIR>          learningtree
+10/07/2009  05:39 AM    <DIR>          sandisk-1GB-20091007
+10/30/2009  03:48 PM    <DIR>          javaone
+11/28/2009  12:30 PM    <DIR>          cruzer-2gb-20091128
+12/20/2009  06:49 PM    <DIR>          DCIM-modified
+12/29/2009  09:41 AM    <DIR>          DCIM
+03/21/2010  09:39 AM    <DIR>          Outlook-20100321
+05/11/2010  06:48 AM    <DIR>          dph-ngc-pst-20100510
+05/30/2010  08:26 AM    <DIR>          dph-ngc
+05/30/2010  08:44 AM    <DIR>          dph-ngc-pst-possibly-modified
+05/30/2010  08:45 AM    <DIR>          Documents
+05/30/2010  11:16 AM    <DIR>          DCIM-20100530-DPH-SD1100
+09/04/2006  04:11 PM         4,347,904 WDSync.exe
+               1 File(s)      4,347,904 bytes
+              19 Dir(s)  29,824,712,704 bytes free
+
+C:\Users\David Holberton>
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+
+external drive 11 (western digital, black and silver/aluminum shell) SN:WXJ1A8147955 PN:BK8A0010BBK
+https://www.storagereview.com/review/western-digital-my-passport-studio-review-1tb
+Western Digital My Passport Studio Review (1TB)
+
+September 22, 2011
+
+WD just launched a pair of external hard drives largely designed for Mac users. The My Passport Studio is the higher end of the two, featuring an all metal anodized aluminum body, sleek rounded edges, capacities up to 1TB, dual FireWire 800 ports and a suite of drive management and security software. The new drives essentially put the previous generation WD externals for Mac to the pasture, and for good reason. WD has really taken design to heart with the My Passport Studio, it just looks and feels great. It has a minimalist feel throughout, even the indicator light is tiny and on the back of the drive so as not to offend. 
+
+C:\Users\David Holberton>dir /o:gd D:\
+The system cannot find the path specified.
+
+C:\Users\David Holberton>
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+
+external drive 12 (western digital, glossy black) PN:WDBACX0010BBK
+
+https://www.amazon.com/Passport-Essential-Portable-External-Drive/dp/B0041OSQ9S
+WD My Passport Essential SE 1 TB USB 3.0 Portable External Hard Drive (Black) 
+
+https://www.bhphotovideo.com/c/product/736911-REG/Western_Digital_WDBACX0010BBK_NESN_My_Passport_Essential_SE.html
+WD 1TB My Passport Essential SE Portable Hard Drive (Black)
+
+The Western Digital 1TB My Passport Essential SE Portable Hard Drive (Black) is your answer to sleek, 'future-proof' portability. With this bus-powered drive, you can have up to 5Gb/s USB 3.0 speeds with complete backward compatibility with USB 2.0, allowing you to take full advantage of your drive immediately while still ensuring future usability.
+
+C:\Users\David Holberton>
+C:\Users\David Holberton>dir /o:gd D:\
+ Volume in drive D is New Volume
+ Volume Serial Number is 1C61-05C9
+
+ Directory of D:\
+
+12/19/2010  12:26 PM    <DIR>          Extras
+12/19/2010  12:26 PM    <DIR>          User Manuals
+12/19/2010  12:27 PM    <DIR>          WD SmartWare
+12/19/2010  12:27 PM    <DIR>          WD SmartWare for Mac
+12/19/2010  12:46 PM    <DIR>          bu20101219
+09/08/2010  01:51 PM         5,553,952 WD SmartWare.exe
+09/08/2010  01:51 PM         4,615,456 WD Quick Formatter.exe
+               2 File(s)     10,169,408 bytes
+               5 Dir(s)  996,865,421,312 bytes free
+
+C:\Users\David Holberton>
+C:\Users\David Holberton>dir /o:gd D:\bu20101219
+ Volume in drive D is New Volume
+ Volume Serial Number is 1C61-05C9
+
+ Directory of D:\bu20101219
+
+10/30/2009  09:37 PM    <DIR>          LocalApps
+12/19/2010  12:46 PM    <DIR>          ..
+12/19/2010  12:46 PM    <DIR>          .
+               0 File(s)              0 bytes
+               3 Dir(s)  996,865,421,312 bytes free
+
+C:\Users\David Holberton>dir /o:gd D:\bu20101219\LocalApps
+ Volume in drive D is New Volume
+ Volume Serial Number is 1C61-05C9
+
+ Directory of D:\bu20101219\LocalApps
+
+06/21/2008  07:15 AM    <DIR>          jdom-1.0
+06/21/2008  07:15 AM    <DIR>          jdom-1.1
+06/21/2008  07:16 AM    <DIR>          junit3.8
+06/21/2008  07:16 AM    <DIR>          junit3.8.1
+06/21/2008  07:17 AM    <DIR>          junit3.8.2
+06/21/2008  07:17 AM    <DIR>          junit4.4
+06/21/2008  07:21 AM    <DIR>          apache-ant-1.6.5
+06/21/2008  07:22 AM    <DIR>          apache-ant-1.7.0
+06/21/2008  07:58 AM    <DIR>          MyEclipse6.5
+06/30/2008  05:06 AM    <DIR>          jakarta-jmeter-2.3.2
+07/02/2008  07:33 AM    <DIR>          db-derby-10.4.1.3-bin
+07/10/2008  07:46 PM    <DIR>          apache-tomcat-6.0.16
+07/19/2008  03:45 PM    <DIR>          hibernate-3.2.6.ga
+07/19/2008  03:50 PM    <DIR>          HibernateTools-3.2.2.Beta1
+10/08/2008  07:05 AM    <DIR>          LWUIT_20080814
+10/08/2008  06:48 PM    <DIR>          ext-2.1
+11/19/2008  08:12 AM    <DIR>          groovy-1.5.7
+11/19/2008  08:19 AM    <DIR>          grails-1.0.3
+11/19/2008  08:23 AM    <DIR>          grails-docs-1.0.3
+11/19/2008  08:35 AM    <DIR>          groovy-docs-1.5.7
+11/21/2008  09:25 AM    <DIR>          derbyDB
+12/11/2008  07:49 AM    <DIR>          mysql-5.1.30-win32
+02/25/2009  08:25 AM    <DIR>          grails-1.0.4
+03/29/2009  09:42 AM    <DIR>          grails-1.1
+05/08/2009  06:55 AM    <DIR>          g2projects
+05/30/2009  07:33 PM    <DIR>          groovy-1.6.1
+05/30/2009  07:34 PM    <DIR>          groovy-1.6.2
+06/14/2009  10:45 AM    <DIR>          groovy-1.6.0
+06/14/2009  10:54 AM    <DIR>          grails-1.1.1
+06/14/2009  10:57 AM    <DIR>          eclipse-jee-ganymede-SR2-win32
+09/23/2009  09:15 PM    <DIR>          eclipse-jee-galileo-win32
+10/02/2009  12:09 PM    <DIR>          groovy-1.6.5
+10/03/2009  07:49 AM    <DIR>          MySQL GUI Tools 5.0
+10/03/2009  08:57 PM    <DIR>          MySQL Workbench 5.1.18 OSS
+10/30/2009  06:48 AM    <DIR>          javadocs
+10/30/2009  08:14 PM    <DIR>          MyEclipse7.5
+10/30/2009  09:37 PM    <DIR>          .
+10/30/2009  09:37 PM    <DIR>          ..
+               0 File(s)              0 bytes
+              38 Dir(s)  996,865,421,312 bytes free
+
+C:\Users\David Holberton>
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+
+external drive 13 (western digital, silver/aluminum) PN:WDBABW0010BSL
+
+https://www.amazon.com/Passport-Portable-External-Drive-Silver/dp/B003DC8D8I
+WD My Passport SE for Mac 1 TB USB 2.0 Portable External Hard Drive (Silver) 
+
+https://www.bhphotovideo.com/c/product/678055-REG/Western_Digital_WDBABW0010BSL_NESN_1TB_My_Passport_SE.html
+WD 1TB My Passport SE Portable USB 2.0 Hard Drive for Mac
+
+The 1TB My Passport SE Portable USB 2.0 Hard Drive for Mac from Western Digital is a portable hard drive in a durable housing, great for use with laptop computers. The drive features an interface that allows it to be connected and powered by USB 2.0 and features a rotation speed of 5400rpm. The drive is an excellent storage solution for users who are on the move.
+
+C:\Users\David Holberton>dir /o:gd D:\
+ Volume in drive D is WD SmartWare
+ Volume Serial Number is CBD8-A1B4
+
+ Directory of D:\
+
+11/13/2009  05:42 PM    <DIR>          User Manuals
+11/13/2009  08:33 PM    <DIR>          Extras
+11/13/2009  08:33 PM    <DIR>          WD SmartWare
+06/18/2009  01:06 PM               695 What is this.html
+06/18/2009  05:12 PM                88 autorun.inf
+11/13/2009  03:25 PM         3,280,672 WD SmartWare.exe
+11/13/2009  03:25 PM         3,687,200 Unlock.exe
+11/13/2009  08:30 PM         1,456,475 Virtual CD Manager.exe
+               5 File(s)      8,425,130 bytes
+               3 Dir(s)               0 bytes free
+
+C:\Users\David Holberton>
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+
+external drive 14 (western digital, dark blue / light blue) PN:WD3200MEB
+
+https://www.amazon.com/WD-WD3200MEB-00-PASSPORT-ESSENTIAL-WD3200MEB00/product-reviews/B003GDSYAQ
+Western Digital WD WD3200MEB-00 320GB My Passport Essential USB HDD...
+
+https://www.amazon.com/WD3200MEB-00-320GB-PASSPORT-ESSENTIAL-WD3200MEB00/dp/B003GDSYAQ/ref=cm_cr_arp_d_product_top?ie=UTF8
+Western Digital WD WD3200MEB-00 320GB My Passport Essential USB HDD (WD3200MEB00)
+
+Digital Storage Capacity 	320 GB
+Hard Disk Interface 		USB 1.1
+Brand 				Western Digital
+Model Name 			My Passport Essential
+Connectivity Technology 	USB
+Hard Disk Size 			320 GB
+
+C:\Users\David Holberton>
+C:\Users\David Holberton>dir /o:gd D:\
+ Volume in drive D is My Passport
+ Volume Serial Number is 35C0-96B9
+
+ Directory of D:\
+
+07/22/2008  02:29 PM    <DIR>          WD_Windows_Tools
+07/22/2008  02:30 PM    <DIR>          Documentation
+07/22/2008  02:30 PM    <DIR>          WDsync
+07/22/2008  02:30 PM    <DIR>          autorun
+09/29/2008  07:34 AM    <DIR>          dphmacosxstuff
+04/24/2004  12:38 PM            37,888 JSTART.exe
+02/08/2008  01:44 PM         4,574,208 WDSync.exe
+07/08/2008  11:53 AM         1,760,039 WDSetup.exe
+07/16/2008  09:14 AM            42,760 WDInstaller.xml
+07/18/2008  11:23 AM           319,488 Setup.exe
+               5 File(s)      6,734,383 bytes
+               5 Dir(s)  313,184,878,592 bytes free
+
+C:\Users\David Holberton>dir /o:gd D:\dphmacosxstuff
+ Volume in drive D is My Passport
+ Volume Serial Number is 35C0-96B9
+
+ Directory of D:\dphmacosxstuff
+
+09/29/2008  07:34 AM    <DIR>          ..
+09/29/2008  07:36 AM    <DIR>          dphmacmini20080929
+03/16/2011  01:02 PM    <DIR>          dphmbp15-20110316
+03/16/2011  01:02 PM    <DIR>          .
+               0 File(s)              0 bytes
+               4 Dir(s)  313,184,813,056 bytes free
+
+C:\Users\David Holberton>
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+
+03/31/2022  05:18 PM       318,595,362 elasticsearch-8.1.2-windows-x86_64.zip
+03/31/2022  05:18 PM               169 elasticsearch-8.1.2-windows-x86_64.zip.sha512
+03/31/2022  05:18 PM               488 elasticsearch-8.1.2-windows-x86_64.zip.asc
+03/31/2022  05:21 PM       393,500,579 kibana-8.1.2-windows-x86_64.zip
+03/31/2022  05:21 PM               162 kibana-8.1.2-windows-x86_64.zip.sha512
+03/31/2022  05:21 PM               488 kibana-8.1.2-windows-x86_64.zip.asc
+03/31/2022  05:35 PM       352,073,951 logstash-8.1.2-windows-x86_64.zip
+03/31/2022  05:36 PM               164 logstash-8.1.2-windows-x86_64.zip.sha512
+03/31/2022  05:36 PM               488 logstash-8.1.2-windows-x86_64.zip.asc
+03/31/2022  05:38 PM        29,179,904 metricbeat-8.1.2-windows-x86_64.msi
+03/31/2022  05:38 PM               166 metricbeat-8.1.2-windows-x86_64.msi.sha512
+03/31/2022  05:38 PM               488 metricbeat-8.1.2-windows-x86_64.msi.asc
+03/31/2022  05:49 PM            53,600 elasticsearch-in-action-main.zip
+03/31/2022  07:47 PM       304,227,684 elasticsearch-7.17.2-windows-x86_64.zip
+03/31/2022  07:47 PM               170 elasticsearch-7.17.2-windows-x86_64.zip.sha512
+03/31/2022  07:51 PM       403,752,639 kibana-7.17.2-windows-x86_64.zip
+03/31/2022  07:51 PM               163 kibana-7.17.2-windows-x86_64.zip.sha512
+
+05/18/2022  09:13 AM       333,385,871 elasticsearch-8.2.0-windows-x86_64.zip
+05/18/2022  09:13 AM               169 elasticsearch-8.2.0-windows-x86_64.zip.sha512
+05/18/2022  09:13 AM               488 elasticsearch-8.2.0-windows-x86_64.zip.asc
+05/18/2022  09:14 AM       370,017,363 kibana-8.2.0-windows-x86_64.zip
+05/18/2022  09:14 AM               162 kibana-8.2.0-windows-x86_64.zip.sha512
+05/18/2022  09:14 AM               488 kibana-8.2.0-windows-x86_64.zip.asc
+05/18/2022  04:22 PM        33,808,068 elasticsearch-5.6.5.zip
+05/18/2022  04:22 PM               128 elasticsearch-5.6.5.zip.sha512
+05/18/2022  04:26 PM        58,508,310 kibana-5.6.5-windows-x86.zip
+05/18/2022  04:27 PM               128 kibana-5.6.5-windows-x86.zip.sha512
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+
+stuff-nuc4u2004
+stuff-nuc6uwin10
+stuff-nuc4u2204
+
+stuff-xps15win10
+stuff-xps17win11
+stuff-xps17wsl2
+
+git clone git@github.com:ashburndev/stuff-nuc4u2004.git
+git clone git@github.com:ashburndev/stuff-nuc6uwin10.git
+git clone git@github.com:ashburndev/stuff-nuc4u2204.git
+
+git clone git@github.com:ashburndev/stuff-xps15win10.git
+git clone git@github.com:ashburndev/stuff-xps17win11.git
+git clone git@github.com:ashburndev/stuff-xps17wsl2.git
+

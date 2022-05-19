@@ -1,0 +1,156 @@
+6:53 AM 4/13/2022
+
+Microsoft Windows [Version 10.0.19043.1586]
+(c) Microsoft Corporation. All rights reserved.
+
+C:\Users\David Holberton>git --version
+git version 2.35.2.windows.1
+
+C:\Users\David Holberton>
+
+grails create-domain-class User
+grails create-domain-class Search
+grails create-domain-class Binary
+grails create-domain-class Image
+grails create-domain-class Attachment
+grails create-domain-class MediaFile
+grails create-domain-class PdfBook
+grails create-domain-class CarrierWaveFile
+grails create-domain-class DocumentCountry
+grails create-domain-class DocumentTopic
+grails create-domain-class NonStateActors
+grails create-domain-class DigestedData
+
+PROBLEM: the above statements do not work with barbedwire grails application configured to use MySQL (at least, not with MySQL 8)
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+
+alternative one: create a new grails application
+
+grails create-app barbedwire
+cd barbedwire
+dir /o:gd
+tree /a
+notepad .gitinit
+git init
+git add .
+git commit -a -m "first commit"
+git status
+grails create-domain-class Document
+grails create-domain-class Comment
+grails create-domain-class User
+grails create-domain-class Search
+grails create-domain-class Binary
+grails create-domain-class Image
+grails create-domain-class Attachment
+grails create-domain-class MediaFile
+grails create-domain-class PdfBook
+grails create-domain-class CarrierWaveFile
+grails create-domain-class DocumentCountry
+grails create-domain-class DocumentTopic
+grails create-domain-class NonStateActors
+grails create-domain-class DigestedData
+code .
+type grails-app\domain\barbedwire\Document.groovy
+type grails-app\domain\barbedwire\Comment.groovy
+REM changes to use MySQL instead of H2
+copy grails-app\conf\DataSource.groovy grails-app\conf\DataSource.groovy.orig
+copy grails-app\conf\BuildConfig.groovy grails-app\conf\BuildConfig.groovy.orig
+copy grails-app\conf\Config.groovy grails-app\conf\Config.groovy.orig
+git status
+git add .
+git commit -a -m "changes to use MySQL instead of H2"
+grails war target\barbedwire.war
+dir /o:gd target
+copy target\barbedwire.war C:\LocalApps\apache-tomcat-8.5.61\webapps
+mysqldump -u root -p barbedwire_production > wire-production-20220412.sql
+grails stats
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+
+alternative two: copy existing domain classes, creating new domain classes
+
+C:\Users\David Holberton\myprojs\barbedwire\grails-app\domain\barbedwire>dir
+ Volume in drive C has no label.
+ Volume Serial Number is 4603-A8D3
+
+ Directory of C:\Users\David Holberton\myprojs\barbedwire\grails-app\domain\barbedwire
+
+04/12/2022  06:08 AM    <DIR>          .
+04/12/2022  06:08 AM    <DIR>          ..
+04/12/2022  06:10 AM               136 Comment.groovy
+04/12/2022  06:10 AM               155 Document.groovy
+               2 File(s)            291 bytes
+               2 Dir(s)  124,818,612,224 bytes free
+
+C:\Users\David Holberton\myprojs\barbedwire\grails-app\domain\barbedwire>
+
+copy Document.groovy User.groovy
+copy Document.groovy Search.groovy
+copy Document.groovy Binary.groovy
+copy Document.groovy Image.groovy
+copy Document.groovy Attachment.groovy
+copy Document.groovy MediaFile.groovy
+copy Document.groovy PdfBook.groovy
+copy Document.groovy CarrierWaveFile.groovy
+copy Document.groovy DocumentCountry.groovy
+copy Document.groovy DocumentTopic.groovy
+copy Document.groovy NonStateActors.groovy
+copy Document.groovy DigestedData.groovy
+
+copy Document.groovy Attachment.groovy
+copy Document.groovy Author.groovy
+copy Document.groovy CarrierWaveFile.groovy
+copy Document.groovy DigestedData.groovy
+copy Document.groovy DocumentCountry.groovy
+copy Document.groovy DocumentTopic.groovy
+copy Document.groovy MediaFile.groovy
+copy Document.groovy NonStateActor.groovy
+copy Document.groovy PdfBook.groovy
+copy Document.groovy Search.groovy
+copy Document.groovy WireBinary.groovy
+copy Document.groovy WireImage.groovy
+copy Document.groovy WireUser.groovy
+
+
+dir /o:gn grails-app\domain\barbedwire
+type grails-app\domain\barbedwire\Attachment.groovy
+type grails-app\domain\barbedwire\Author.groovy
+type grails-app\domain\barbedwire\CarrierWaveFile.groovy
+type grails-app\domain\barbedwire\Comment.groovy
+type grails-app\domain\barbedwire\DigestedData.groovy
+type grails-app\domain\barbedwire\Document.groovy
+type grails-app\domain\barbedwire\DocumentCountry.groovy
+type grails-app\domain\barbedwire\DocumentTopic.groovy
+type grails-app\domain\barbedwire\MediaFile.groovy
+type grails-app\domain\barbedwire\NonStateActor.groovy
+type grails-app\domain\barbedwire\PdfBook.groovy
+type grails-app\domain\barbedwire\Search.groovy
+type grails-app\domain\barbedwire\WireBinary.groovy
+type grails-app\domain\barbedwire\WireImage.groovy
+type grails-app\domain\barbedwire\WireUser.groovy
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

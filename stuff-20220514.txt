@@ -1,0 +1,19 @@
+1:08 PM 5/14/2022
+
+Microsoft Windows [Version 10.0.19043.1706]
+(c) Microsoft Corporation. All rights reserved.
+
+C:\Users\David Holberton>date /t
+Sat 05/14/2022
+
+C:\Users\David Holberton>time /t
+01:06 PM
+
+C:\Users\David Holberton>
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+
+https://www.raspberrypi.com/software/operating-systems/
+
+
+
